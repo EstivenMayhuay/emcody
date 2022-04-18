@@ -1,0 +1,40 @@
+{
+  "name": "emcody",
+  "version": "0.1.0",
+  "description": "This is the EmCody Blog in which we talk about web developmentt",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EstivenMayhuay/emcody.git"
+  },
+  "keywords": [
+    "EMCODY",
+    "emcody",
+    "HTML5",
+    "CSS3",
+    "JavaScript",
+    "Node.js",
+    "React.js"
+  ],
+  "author": "Estiven Mayhuay",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EstivenMayhuay/emcody/issues"
+  },
+  "homepage": "https://github.com/EstivenMayhuay/emcody#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-cli": "2.3.0",
+    "gulp-pug": "5.0.0"
+  },
+  "dependencies": {
+    "D": "1.0.0",
+    "gulp-less": "5.0.0"
+  }
+}
