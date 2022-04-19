@@ -1,0 +1,15 @@
+/* header */
+.header {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  column-gap: 1em;
+  padding: 1em;
+  width: 100%;
+  height: @hHeaderMobile;
+  background: @color-primary;
+  
+  &__title {
+    .mixin-fonts(@white, @font-firaCode, 700, @headline-6);
+  }
+}

@@ -1,7 +1,70 @@
-body {
+:root {
+  scroll-behavior: smooth;
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* header */
+.header {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  column-gap: 1em;
+  padding: 1em;
+  width: 100%;
+  height: 55px;
+  background: #88139B;
+}
+.header__title {
+  color: #ffffff;
+  font-family: 'Fira Code', monospace;
+  font-weight: 700;
+  font-size: 17px;
+}
+/* Section Home Banner */
+.home {
+  position: relative;
+  width: 100%;
+}
+.home__bg {
+  height: 360px;
+}
+.home__bg img {
   display: block;
-  max-width: 100%;
-  height: 100vh;
-  background: red;
-  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.home__info {
+  position: absolute;
+  top: 24px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  display: flex;
+  flex-flow: column;
+  row-gap: 1em;
+  width: 80%;
+}
+.home__info h1,
+.home__info p {
+  text-align: center;
+}
+.home__info h1 {
+  color: #ffffff;
+  font-family: 'Fira Code', monospace;
+  font-weight: 700;
+  font-size: 30px;
+}
+.home__info p {
+  color: #eeeeee;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 1.6em;
 }
