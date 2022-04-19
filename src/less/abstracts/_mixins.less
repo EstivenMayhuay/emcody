@@ -4,3 +4,23 @@
   font-weight: @weight;
   font-size: @size;
 }
+
+.mixin-shadow-elements (@x, @y, @r, @s, @color) {
+  box-shadow: @x @y @r @s @color;
+}
+
+.mixin-coverImage {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mixin-buttons-events {
+  cursor: pointer;
+
+  &:active {
+    transform: scale(0.85);
+    transition: transform 0.4s ease;
+  }
+}

@@ -1,3 +1,16 @@
+.mixin-coverImage {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.mixin-buttons-events {
+  cursor: pointer;
+}
+.mixin-buttons-events:active {
+  transform: scale(0.85);
+  transition: transform 0.4s ease;
+}
 :root {
   scroll-behavior: smooth;
 }
@@ -7,6 +20,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+body {
+  position: relative;
+  display: block;
+  max-width: 100%;
 }
 /* header */
 .header {
@@ -25,21 +43,27 @@
   font-weight: 700;
   font-size: 17px;
 }
-/* Section Home Banner */
-.home {
+/* Main */
+.main {
+  display: flex;
+  flex-flow: column;
+  row-gap: 48px;
+  max-width: 100%;
+}
+.main .home {
   position: relative;
   width: 100%;
 }
-.home__bg {
-  height: 360px;
+.main .home__bg {
+  height: 320px;
 }
-.home__bg img {
+.main .home__bg img {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.home__info {
+.main .home__info {
   position: absolute;
   top: 24px;
   left: 0;
@@ -51,20 +75,174 @@
   row-gap: 1em;
   width: 80%;
 }
-.home__info h1,
-.home__info p {
+.main .home__info h1,
+.main .home__info p {
   text-align: center;
 }
-.home__info h1 {
+.main .home__info h1 {
   color: #ffffff;
   font-family: 'Fira Code', monospace;
   font-weight: 700;
   font-size: 30px;
 }
-.home__info p {
+.main .home__info p {
   color: #eeeeee;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 17px;
   line-height: 1.6em;
+}
+.main .whatYouFind__title {
+  text-align: center;
+  color: #404040;
+  font-family: 'Fira Code', monospace;
+  font-weight: 600;
+  font-size: 21px;
+}
+.main .whatYouFind__contentCards {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  row-gap: 24px;
+  padding: 24px 0;
+}
+.main .whatYouFind__contentCards .card {
+  flex: 1;
+  width: 260px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  row-gap: 8px;
+  padding: 1em;
+  background: #88139B;
+  border-radius: 10px;
+  box-shadow: 4px 8px 10px 0px rgba(64, 64, 64, 0.5);
+}
+.main .whatYouFind__contentCards .card__title {
+  color: #eeeeee;
+  font-family: 'Fira Code', monospace;
+  font-weight: 700;
+  font-size: 17px;
+}
+.main .whatYouFind__contentCards .card__descp {
+  line-height: 1.6em;
+  color: #eeeeee;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+}
+.main .ourProjects {
+  outline: 2px solid blue;
+}
+.main .ourProjects__title {
+  text-align: center;
+  color: #404040;
+  font-family: 'Fira Code', monospace;
+  font-weight: 600;
+  font-size: 21px;
+}
+.main .colaborators {
+  padding: 24px 0;
+  margin-bottom: 48px;
+}
+.main .colaborators__title {
+  text-align: center;
+  color: #404040;
+  font-family: 'Fira Code', monospace;
+  font-weight: 600;
+  font-size: 21px;
+  margin-bottom: 24px;
+}
+.main .colaborators__card {
+  display: flex;
+  flex-flow: column;
+  row-gap: 8px;
+  align-items: center;
+  width: 260px;
+  padding: 1em;
+  background: #eeeeee;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+.main .colaborators__card .iconPerson {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 2px 4px 8px 0px rgba(64, 64, 64, 0.25);
+}
+.main .colaborators__card .iconPerson img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.main .colaborators__card h4 {
+  color: #88139B;
+  font-family: 'Fira Code', monospace;
+  font-weight: 700;
+  font-size: 21px;
+}
+.main .colaborators__card span {
+  color: #404040;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  font-size: 17px;
+}
+/* Footer */
+.footer {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 35px;
+  background: #88139B;
+}
+.footer span {
+  display: block;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+}
+body {
+  position: relative;
+}
+#buttonUp,
+#buttonMenu {
+  position: absolute;
+  right: 16px;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+#buttonUp:active,
+#buttonMenu:active {
+  transform: scale(0.85);
+  transition: transform 0.4s ease;
+}
+#buttonUp {
+  bottom: 115px;
+  z-index: 99;
+}
+#buttonMenu {
+  bottom: 59px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 4px;
+  background: #88139B;
+  border-radius: 50%;
+  z-index: 98;
+}
+#buttonMenu__up,
+#buttonMenu__center,
+#buttonMenu__down {
+  background: #ffffff;
+  width: 70%;
+  height: 3px;
 }

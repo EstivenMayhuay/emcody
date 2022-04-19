@@ -1,43 +1,148 @@
-/* Section Home Banner */
-.home {
-  position: relative;
-  width: 100%;
-  
-  &__bg {
-    height: 360px;
+/* Main */
+.main {
+  display: flex;
+  flex-flow: column;
+  row-gap: 48px;
+  max-width: 100%;
 
-    img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    } 
+  // Section Banner
+  .home {
+    position: relative;
+    width: 100%;
+    
+    &__bg {
+      height: @hBannerMobile;
+
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      } 
+    }
+
+    &__info {
+      position: absolute;
+      top: 24px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      display: flex;
+      flex-flow: column;
+      row-gap: 1em;
+      width: 80%;
+
+      h1, p {
+        text-align: center;
+      }
+
+      h1 {
+        .mixin-fonts (@white, @font-firaCode, 700, @headline-4);
+      }
+
+      p {
+        .mixin-fonts (@white-grayish, @font-roboto, 500, @headline-6);
+        line-height: 1.6em;
+      }
+
+    }
   }
 
-  &__info {
-    position: absolute;
-    top: 24px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    display: flex;
-    flex-flow: column;
-    row-gap: 1em;
-    width: 80%;
+  // Section What You Find
+  .whatYouFind {
+    // outline: 2px solid blue;
 
-    h1, p {
+    &__title {
       text-align: center;
+      .mixin-fonts(@black-grayish, @font-firaCode, 600, @headline-5);
     }
 
-    h1 {
-      .mixin-fonts (@white, @font-firaCode, 700, @headline-4);
+    &__contentCards {
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      row-gap: 24px;
+      padding: 24px 0;
+
+      .card {
+        flex: 1;
+        width: @wCardWhatFind;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        row-gap: 8px;
+        padding: 1em;
+        background: @color-primary;
+        border-radius: 10px;
+        .mixin-shadow-elements(4px, 8px, 10px, 0px, rgba(64, 64, 64, 0.5));
+
+        &__title {
+          .mixin-fonts(@white-grayish, @font-firaCode, 700, @headline-6);
+        }
+        
+        &__descp {
+          line-height: 1.6em;
+          .mixin-fonts(@white-grayish, @font-roboto, 500, @subtitle-1);
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  // Section Our Projects
+  .ourProjects {
+    outline: 2px solid blue;
+    
+    &__title {
+      text-align: center;
+      .mixin-fonts(@black-grayish, @font-firaCode, 600, @headline-5);
+    }
+  }
+
+  // Section Colaborators
+  .colaborators {
+    // outline: 2px solid blue;
+    padding: 24px 0; 
+    margin-bottom: 48px;
+
+    
+    &__title {
+      text-align: center;
+      .mixin-fonts(@black-grayish, @font-firaCode, 600, @headline-5);
+      margin-bottom: 24px;
     }
 
-    p {
-      .mixin-fonts (@white-grayish, @font-roboto, 500, @headline-6);
-      line-height: 1.6em;
-    }
+    &__card {
+      display: flex;
+      flex-flow: column;
+      row-gap: 8px;
+      align-items: center;
+      width: @wCardWhatFind;
+      padding: 1em;
+      background: @white-grayish;
+      margin: 0 auto;
+      border-radius: 10px;
 
+      .iconPerson {
+        width: @wIconPerson;
+        height: @wIconPerson;
+        border-radius: 50%;
+        overflow: hidden;
+        .mixin-shadow-elements(2px, 4px, 8px, 0px, rgba(64, 64, 64, 0.25));
+
+        img {
+          .mixin-coverImage()
+        }
+      }
+
+      h4 {
+        .mixin-fonts(@color-primary, @font-firaCode, 700, @headline-5);
+      }
+
+      span {
+        .mixin-fonts(@black-grayish, @font-roboto, 600, @headline-6);
+      }
+    }
   }
 }
