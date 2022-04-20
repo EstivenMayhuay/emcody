@@ -16,6 +16,7 @@ const fetchGithub = async () => {
       topics: dataRepo.topics
     })
   })
+
   return repos
 }
 
@@ -23,7 +24,7 @@ const createElementsCards = async () => {
   const repos =  await fetchGithub();
   const fragment = document.createDocumentFragment();
 
-  repos.slice(-8).forEach(repo => {
+  repos.slice(-6).forEach(repo => {
     const cardProject = document.createElement('div');
     const divTopics = document.createElement('ul');
     const h4 = document.createElement('h4');
@@ -62,9 +63,6 @@ const createElementsCards = async () => {
   return fragment;
 }
 
-const renderProjectsGithub = async () => {
-  const contentProjects = document.getElementById('projects');
-  contentProjects.appendChild(await createElementsCards());
-}
+const renderProjectsGithub = async () => document.getElementById('projects').appendChild(await createElementsCards());
 
 export {renderProjectsGithub}

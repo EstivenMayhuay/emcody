@@ -10,6 +10,31 @@ body {
   .mixin-buttons-events();
 }
 
+#buttonUp {
+  bottom: @hFooter + 8px;
+  z-index: 99;
+}
+
+#buttonMenu {
+  top: 12px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 4px;
+  background: @color-primary;
+  border-radius: 50%;
+  transform: rotate(0);
+  transition: transform 0.4s ease;
+  z-index: 97;
+
+  &__up, &__center, &__down {
+    background: @white;
+    width: 70%;
+    height: 3px;
+  }
+}
+
 .btnRepositorie, .btnLiveSite {
   display: flex;
   flex-flow: row;
@@ -32,30 +57,6 @@ body {
   color: @color-primary;
 }
 
-#buttonUp {
-  bottom: @hFooter + @wbtnUpMenu + 48px;
-  z-index: 99;
-}
-
-#buttonMenu {
-  bottom: @hFooter + 24px;
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  justify-content: center;
-  row-gap: 4px;
-  background: @color-primary;
-  border-radius: 50%;
-  transform: rotate(0);
-  transition: transform 0.4s ease;
-  z-index: 98;
-
-  &__up, &__center, &__down {
-    background: @white;
-    width: 70%;
-    height: 3px;
-  }
-}
 
 #buttonMenu.activeMenu {
   background: @white;

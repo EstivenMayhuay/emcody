@@ -31,6 +31,8 @@ body {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
+  justify-content: initial;
+  row-gap: 0;
   column-gap: 1em;
   padding: 1em;
   width: 100%;
@@ -42,6 +44,60 @@ body {
   font-family: 'Fira Code', monospace;
   font-weight: 700;
   font-size: 17px;
+}
+.contentMenu {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  row-gap: 1em;
+  column-gap: 0;
+  width: 100%;
+  height: 0;
+  background: #88139B;
+  overflow: hidden;
+  transition: height 0.4s ease;
+  z-index: 98;
+}
+.contentMenu .menu {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  row-gap: 1em;
+  column-gap: 0;
+  list-style: none;
+}
+.contentMenu .menu__item {
+  display: block;
+  text-align: center;
+}
+.contentMenu .menu__link {
+  text-decoration: none;
+  color: #eeeeee;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+.activeContentMenu {
+  border-top: 0.25px solid #dddddd;
+  border-bottom: 0.25px solid #dddddd;
+  animation: fade 0.4s ease;
+  transition: animation 0.4s ease;
+}
+@keyframes fade {
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 /* Main */
 .main {
@@ -267,6 +323,30 @@ body {
   transform: scale(0.85);
   transition: transform 0.4s ease;
 }
+#buttonUp {
+  bottom: 43px;
+  z-index: 99;
+}
+#buttonMenu {
+  top: 12px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 4px;
+  background: #88139B;
+  border-radius: 50%;
+  transform: rotate(0);
+  transition: transform 0.4s ease;
+  z-index: 97;
+}
+#buttonMenu__up,
+#buttonMenu__center,
+#buttonMenu__down {
+  background: #ffffff;
+  width: 70%;
+  height: 3px;
+}
 .btnRepositorie,
 .btnLiveSite {
   display: flex;
@@ -294,30 +374,6 @@ body {
 .btnLiveSite {
   border: 2px solid #88139B;
   color: #88139B;
-}
-#buttonUp {
-  bottom: 115px;
-  z-index: 99;
-}
-#buttonMenu {
-  bottom: 59px;
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  justify-content: center;
-  row-gap: 4px;
-  background: #88139B;
-  border-radius: 50%;
-  transform: rotate(0);
-  transition: transform 0.4s ease;
-  z-index: 98;
-}
-#buttonMenu__up,
-#buttonMenu__center,
-#buttonMenu__down {
-  background: #ffffff;
-  width: 70%;
-  height: 3px;
 }
 #buttonMenu.activeMenu {
   background: #ffffff;

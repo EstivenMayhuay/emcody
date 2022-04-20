@@ -1,3 +1,12 @@
+.mixin-display-flex(@direction, @stateWrap, @x-direction, @y-direction, @row-gap, @col-gap ) {
+  display: flex;
+  flex-flow: @direction @stateWrap;
+  align-items: @x-direction;
+  justify-content: @y-direction;
+  row-gap: @row-gap;
+  column-gap: @col-gap;
+}
+
 .mixin-fonts (@color, @font, @weight, @size) {
   color: @color;
   font-family: @font;
