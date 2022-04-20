@@ -132,15 +132,58 @@ body {
   font-size: 14px;
   text-align: center;
 }
-.main .ourProjects {
-  outline: 2px solid blue;
-}
 .main .ourProjects__title {
   text-align: center;
   color: #404040;
   font-family: 'Fira Code', monospace;
   font-weight: 600;
   font-size: 21px;
+  margin-bottom: 24px;
+}
+.main .ourProjects #projects {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  row-gap: 24px;
+}
+.main .ourProjects #projects .cardProject {
+  display: flex;
+  flex-flow: column;
+  row-gap: 24px;
+  width: 300px;
+  padding: 1em;
+  background: #eeeeee;
+  border-radius: 10px;
+}
+.main .ourProjects #projects .cardProject h4 {
+  color: #404040;
+  font-family: 'Fira Code', monospace;
+  font-weight: 700;
+  font-size: 17px;
+  text-align: center;
+}
+.main .ourProjects #projects .cardProject p {
+  color: #404040;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+}
+.main .ourProjects #projects .cardProject__topics {
+  display: flex;
+  flex-flow: row nowrap;
+  column-gap: 16px;
+  justify-content: center;
+  list-style: none;
+}
+.main .ourProjects #projects .cardProject__topics li {
+  background: #88139B;
+  border-radius: 8px;
+  padding: 0.5em 1em;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
 }
 .main .colaborators {
   padding: 24px 0;
@@ -224,6 +267,34 @@ body {
   transform: scale(0.85);
   transition: transform 0.4s ease;
 }
+.btnRepositorie,
+.btnLiveSite {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: center;
+  column-gap: 8px;
+  border-radius: 16px;
+  padding: 10px 20px;
+  text-decoration: none;
+  cursor: pointer;
+  color: #eeeeee;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+.btnRepositorie:active,
+.btnLiveSite:active {
+  transform: scale(0.85);
+  transition: transform 0.4s ease;
+}
+.btnRepositorie {
+  background: #88139B;
+}
+.btnLiveSite {
+  border: 2px solid #88139B;
+  color: #88139B;
+}
 #buttonUp {
   bottom: 115px;
   z-index: 99;
@@ -237,6 +308,8 @@ body {
   row-gap: 4px;
   background: #88139B;
   border-radius: 50%;
+  transform: rotate(0);
+  transition: transform 0.4s ease;
   z-index: 98;
 }
 #buttonMenu__up,
@@ -245,4 +318,25 @@ body {
   background: #ffffff;
   width: 70%;
   height: 3px;
+}
+#buttonMenu.activeMenu {
+  background: #ffffff;
+  outline: 2px solid #88139B;
+  transform: rotate(180deg);
+  transition: transform 0.4s ease;
+}
+#buttonMenu.activeMenu #buttonMenu__up {
+  display: none;
+}
+#buttonMenu.activeMenu #buttonMenu__center,
+#buttonMenu.activeMenu #buttonMenu__down {
+  background: #88139B;
+}
+#buttonMenu.activeMenu #buttonMenu__center {
+  transform: translate(0px, 3px) rotate(50deg);
+  transition: transform 0.4s ease;
+}
+#buttonMenu.activeMenu #buttonMenu__down {
+  transform: translate(0px, -4px) rotate(-50deg);
+  transition: transform 0.4s ease;
 }

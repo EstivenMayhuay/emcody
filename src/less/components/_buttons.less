@@ -10,6 +10,28 @@ body {
   .mixin-buttons-events();
 }
 
+.btnRepositorie, .btnLiveSite {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: center;
+  column-gap: 8px;
+  border-radius: 16px;
+  padding: 10px 20px;
+  text-decoration: none;
+  .mixin-buttons-events();
+  .mixin-fonts(@white-grayish, @font-roboto, 500, @body-1);
+}
+
+.btnRepositorie {
+  background: @color-primary;
+}
+
+.btnLiveSite {
+  border: 2px solid @color-primary;
+  color: @color-primary;
+}
+
 #buttonUp {
   bottom: @hFooter + @wbtnUpMenu + 48px;
   z-index: 99;
@@ -24,11 +46,38 @@ body {
   row-gap: 4px;
   background: @color-primary;
   border-radius: 50%;
+  transform: rotate(0);
+  transition: transform 0.4s ease;
   z-index: 98;
 
   &__up, &__center, &__down {
     background: @white;
     width: 70%;
     height: 3px;
+  }
+}
+
+#buttonMenu.activeMenu {
+  background: @white;
+  outline: 2px solid @color-primary;
+  transform: rotate(180deg);
+  transition: transform 0.4s ease;
+
+  #buttonMenu__up {
+    display: none;
+  }
+
+  #buttonMenu__center, #buttonMenu__down {
+    background: @color-primary;
+  }
+
+  #buttonMenu__center {
+    transform: translate(0px, 3px) rotate(50deg);
+    transition: transform 0.4s ease;
+  }
+
+  #buttonMenu__down {
+    transform: translate(0px, -4px) rotate(-50deg);
+    transition: transform 0.4s ease;
   }
 }

@@ -92,12 +92,55 @@
 
   // Section Our Projects
   .ourProjects {
-    outline: 2px solid blue;
     
     &__title {
       text-align: center;
       .mixin-fonts(@black-grayish, @font-firaCode, 600, @headline-5);
+      margin-bottom: 24px;
     }
+
+    #projects {
+      display: flex;
+      flex-flow: column wrap;
+      align-items: center;
+      row-gap: 24px;
+      
+      .cardProject {
+        display: flex;
+        flex-flow: column;
+        row-gap: 24px;
+        width: @wCardProjects;
+        padding: 1em;
+        background: @white-grayish;
+        border-radius: 10px;
+
+        h4 {
+          .mixin-fonts(@black-grayish, @font-firaCode, 700, @headline-6);
+          text-align: center;
+        }
+
+        p {
+          .mixin-fonts(@black-grayish, @font-roboto, 500, @subtitle-1);
+          text-align: center;
+        }
+
+        &__topics {
+          display: flex;
+          flex-flow: row nowrap;
+          column-gap: 16px;
+          justify-content: center;
+          list-style: none;
+
+          li {
+            background: @color-primary;
+            border-radius: 8px;
+            padding: 0.5em 1em;
+            .mixin-fonts(@white, @font-roboto, 500, @body-2);
+          }
+        }
+
+      }
+    }    
   }
 
   // Section Colaborators
