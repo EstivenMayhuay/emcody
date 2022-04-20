@@ -25,37 +25,37 @@ const createElementsCards = async () => {
 
   repos.slice(-8).forEach(repo => {
     const cardProject = document.createElement('div');
-    const listLanguages = document.createElement('ul');
-    const divTopics = document.createElement('div');
+    const divTopics = document.createElement('ul');
     const h4 = document.createElement('h4');
     const p = document.createElement('p');
     const linkSite = document.createElement('a');
     const linkLive = document.createElement('a');
 
     h4.textContent = repo.name;
-    p.textContent = repo.description.slice(0, 80)+ "...";
+    p.textContent = repo.description
     linkSite.innerHTML = `<i class='bx bxl-github'></i> Repositorio`;
     linkSite.href = repo.site;
+    linkSite.target = "_blank";
     linkLive.innerHTML = `<i class='bx bx-window-open'></i> Live`;
     linkLive.href = repo.homepage;
+    linkLive.target = "_blank"
 
+    linkSite.setAttribute('class', 'btnRepositorie')
+    linkLive.setAttribute('class', 'btnLiveSite')
+    divTopics.setAttribute('class', 'cardProject__topics')
     cardProject.setAttribute("class", "cardProject")
 
     cardProject.appendChild(h4);
     cardProject.appendChild(p);
-
-    if(repo.topics.length > 0) { 
-      listLanguages.innerHTML = repo.topics.slice(0, 3).join(" ");
-      cardProject.appendChild(listLanguages); 
+    if(repo.topics.length > 0) {
+      const repoFormat = repo.topics.slice(0, 3)
+      repoFormat.forEach((topic) => {
+        divTopics.innerHTML += `<li>${topic}</li>`
+      })
+      cardProject.appendChild(divTopics); 
     }
-
     cardProject.appendChild(linkSite);
     cardProject.appendChild(linkLive);
-
-    cardProject.style.width = '280px';
-    cardProject.style.height = '100%';
-    cardProject.style.margin = 'auto';
-
     fragment.appendChild(cardProject);
   })
 
