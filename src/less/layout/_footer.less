@@ -1,9 +1,14 @@
 /* Footer */
 .footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
   width: 100%;
   height: @hFooter;
   background: @color-primary;
   .mixin-display-flex(column, wrap, center, center, 0, 0);
+  z-index: 95;
 
   span {
     display: block;

@@ -115,7 +115,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  width: 70%;
+  width: 60%;
   min-height: 100%;
   padding: 24px 16px;
   background: #eeeeee;
@@ -124,6 +124,7 @@ body {
   transform: translate(-100%, 0);
   transition: transform 0.5s ease;
   overflow-y: scroll;
+  z-index: 96;
 }
 .panel .panelMenu {
   display: flex;
@@ -366,6 +367,10 @@ body {
 }
 /* Footer */
 .footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
   width: 100%;
   height: 35px;
   background: #88139B;
@@ -375,6 +380,7 @@ body {
   justify-content: center;
   row-gap: 0;
   column-gap: 0;
+  z-index: 95;
 }
 .footer span {
   display: block;

@@ -1,6 +1,8 @@
 doctype html
 html(lang="es")
   include ../includes/head.pug
+  block titlePage
+    title= 'HTML5 - Desarrollo Web'
   block ownStyle
     link(rel="stylesheet", href="../../css/index.css")
   body
@@ -10,9 +12,8 @@ html(lang="es")
     include ../includes/sideBar.pug
 
     main.main
-      :markdown-it()
-        # HTML5
-      //- include:markdown-it 
+      section.intro-HTML5
+        include:markdown-it(html) ../../../src/markdown/post/html5/index.md
 
     #buttonUp
       img(src=`${baseDeployUrlImg}/icon-up.svg`, alt="icon up" id="iconUp")

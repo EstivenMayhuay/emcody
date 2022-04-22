@@ -2,9 +2,9 @@ doctype html
 html(lang="es")
   include ../includes/head.pug
   block titlePage
-    title= 'Breve Historia HTML5'
+    title= 'Node.js - Desarrollo Web'
   block ownStyle
-    link(rel="stylesheet", href="../../../css/index.css")
+    link(rel="stylesheet", href="../../css/index.css")
   body
     include ../includes/header.pug
     include ../includes/navMenu.pug
@@ -13,7 +13,7 @@ html(lang="es")
 
     main.main
       section.intro-HTML5
-        include:markdown-it(html) ../../../src/markdown/post/html5/breve-historia.md
+          <p style="text-align:center; color: #8040ea; margin: 1em auto; font-weight: bold; font-size: 1.1em">Nos encontramos trabajando en esta seccion de Node.js, pero te avisaremos cuando este lista</p>
 
     #buttonUp
       img(src=`${baseDeployUrlImg}/icon-up.svg`, alt="icon up" id="iconUp")
@@ -25,5 +25,5 @@ html(lang="es")
     
     include ../includes/footer.pug
 
-    script(src="../../../script/app.js" type="module") 
+    script(src="../../script/app.js" type="module") 
 
