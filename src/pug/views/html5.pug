@@ -1,0 +1,23 @@
+doctype html
+html(lang="es")
+  include ../includes/head.pug
+  body
+    include ../includes/header.pug
+    include ../includes/navMenu.pug
+    include ../includes/headSideBar.pug
+    include ../includes/sideBar.pug
+
+    main.main
+
+    #buttonUp
+      img(src="./images/icon-up.svg", alt="icon up" id="iconUp")
+    
+    #buttonMenu
+      p#buttonMenu__up
+      p#buttonMenu__center
+      p#buttonMenu__down
+    
+    include ../includes/footer.pug
+
+    script(src="./script/app.js" type="module") 
+

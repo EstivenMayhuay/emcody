@@ -37,7 +37,7 @@ const createElementsCards = async () => {
     linkSite.innerHTML = `<i class='bx bxl-github'></i> Repositorio`;
     linkSite.href = repo.site;
     linkSite.target = "_blank";
-    linkLive.innerHTML = `<i class='bx bx-window-open'></i> Live`;
+    linkLive.innerHTML = `<i class='bx bx-window-open'></i> Ver Sitio`;
     linkLive.href = repo.homepage;
     linkLive.target = "_blank"
 

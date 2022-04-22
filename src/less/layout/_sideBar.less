@@ -1,0 +1,33 @@
+.panel {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 70%;
+  min-height: 100%;
+  padding: 24px 16px;
+  overflow-y: scroll;
+  transform: translate(-100%, 0);
+  transition: transform 0.5s ease;
+  background: @white-grayish;
+
+  .panelMenu {
+    .mixin-display-flex(column, wrap, 0, 0, 16px, 0);
+
+    &__indice {
+
+      summary {
+        .mixin-fonts(@black-grayish, @font-firaCode, 600, @subtitle-1);
+      }
+
+      ul {
+        .mixin-display-flex(column, wrap, 0, 0, 8px, 0);
+        list-style: none;
+        padding: 0.5em;
+
+        li > a {
+          .mixin-fonts(@black-grayish, @font-roboto, 400, @body-2);
+        }
+      }
+    }
+  }
+}

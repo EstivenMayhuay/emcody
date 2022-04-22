@@ -1,9 +1,11 @@
-import {goUp} from './modules/goUp.js';
+import { goUp } from './modules/goUp.js';
 import { menuHambuerger } from "./modules/menuHamburger.js";
 import { renderProjectsGithub } from "./modules/renderProjectsGithub.js"
+import { sideBarPanel } from './modules/sideBarPanel.js';
 
 document.addEventListener("DOMContentLoaded", () => {
-  renderProjectsGithub();
+  if(document.getElementById('projects') != null) renderProjectsGithub();
   goUp();
   menuHambuerger();
+  sideBarPanel();
 })

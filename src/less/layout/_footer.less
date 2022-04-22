@@ -1,12 +1,9 @@
 /* Footer */
 .footer {
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  justify-content: center;
   width: 100%;
   height: @hFooter;
   background: @color-primary;
+  .mixin-display-flex(column, wrap, center, center, 0, 0);
 
   span {
     display: block;

@@ -25,6 +25,7 @@ body {
   position: relative;
   display: block;
   max-width: 100%;
+  min-height: 100vh;
 }
 /* header */
 .header {
@@ -99,11 +100,67 @@ body {
     opacity: 1;
   }
 }
+.headSideBar {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: initial;
+  row-gap: 0;
+  column-gap: 0;
+  padding: 4px 8px;
+  border-bottom: 2px solid #dddddd;
+  background: #eeeeee;
+}
+.panel {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 70%;
+  min-height: 100%;
+  padding: 24px 16px;
+  overflow-y: scroll;
+  transform: translate(-100%, 0);
+  transition: transform 0.5s ease;
+  background: #eeeeee;
+}
+.panel .panelMenu {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: 0;
+  justify-content: 0;
+  row-gap: 16px;
+  column-gap: 0;
+}
+.panel .panelMenu__indice summary {
+  color: #404040;
+  font-family: 'Fira Code', monospace;
+  font-weight: 600;
+  font-size: 14px;
+}
+.panel .panelMenu__indice ul {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: 0;
+  justify-content: 0;
+  row-gap: 8px;
+  column-gap: 0;
+  list-style: none;
+  padding: 0.5em;
+}
+.panel .panelMenu__indice ul li > a {
+  color: #404040;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
 /* Main */
 .main {
   display: flex;
-  flex-flow: column;
+  flex-flow: column wrap;
+  align-items: initial;
+  justify-content: initial;
   row-gap: 48px;
+  column-gap: 0;
   max-width: 100%;
 }
 .main .home {
@@ -125,11 +182,14 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  margin: auto;
   display: flex;
-  flex-flow: column;
+  flex-flow: column wrap;
+  align-items: initial;
+  justify-content: initial;
   row-gap: 1em;
+  column-gap: 0;
   width: 80%;
+  margin: auto;
 }
 .main .home__info h1,
 .main .home__info p {
@@ -157,22 +217,26 @@ body {
 }
 .main .whatYouFind__contentCards {
   display: flex;
-  flex-flow: column;
+  flex-flow: column wrap;
   align-items: center;
+  justify-content: initial;
   row-gap: 24px;
+  column-gap: 0;
   padding: 24px 0;
 }
 .main .whatYouFind__contentCards .card {
   flex: 1;
   width: 260px;
   display: flex;
-  flex-flow: column;
+  flex-flow: column wrap;
   align-items: center;
+  justify-content: initial;
   row-gap: 8px;
-  padding: 1em;
+  column-gap: 0;
+  box-shadow: 4px 8px 10px 0px rgba(64, 64, 64, 0.5);
   background: #88139B;
   border-radius: 10px;
-  box-shadow: 4px 8px 10px 0px rgba(64, 64, 64, 0.5);
+  padding: 1em;
 }
 .main .whatYouFind__contentCards .card__title {
   color: #eeeeee;
@@ -200,13 +264,18 @@ body {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
+  justify-content: none;
   row-gap: 24px;
+  column-gap: 0;
 }
 .main .ourProjects #projects .cardProject {
-  display: flex;
-  flex-flow: column;
-  row-gap: 24px;
   width: 300px;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: flex-start;
+  row-gap: 24px;
+  column-gap: 0;
   padding: 1em;
   background: #eeeeee;
   border-radius: 10px;
@@ -226,11 +295,13 @@ body {
   text-align: center;
 }
 .main .ourProjects #projects .cardProject__topics {
+  list-style: none;
   display: flex;
   flex-flow: row nowrap;
-  column-gap: 16px;
+  align-items: initial;
   justify-content: center;
-  list-style: none;
+  row-gap: 0;
+  column-gap: 16px;
 }
 .main .ourProjects #projects .cardProject__topics li {
   background: #88139B;
@@ -255,9 +326,11 @@ body {
 }
 .main .colaborators__card {
   display: flex;
-  flex-flow: column;
-  row-gap: 8px;
+  flex-flow: column wrap;
   align-items: center;
+  justify-content: initial;
+  row-gap: 8px;
+  column-gap: 0;
   width: 260px;
   padding: 1em;
   background: #eeeeee;
@@ -291,13 +364,15 @@ body {
 }
 /* Footer */
 .footer {
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  justify-content: center;
   width: 100%;
   height: 35px;
   background: #88139B;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  row-gap: 0;
+  column-gap: 0;
 }
 .footer span {
   display: block;
@@ -307,12 +382,8 @@ body {
   font-size: 14px;
   text-align: center;
 }
-body {
-  position: relative;
-}
 #buttonUp,
 #buttonMenu {
-  position: absolute;
   right: 16px;
   width: 32px;
   height: 32px;
@@ -324,16 +395,19 @@ body {
   transition: transform 0.4s ease;
 }
 #buttonUp {
-  bottom: 43px;
+  position: absolute;
+  bottom: 39px;
   z-index: 99;
 }
 #buttonMenu {
+  position: absolute;
   top: 12px;
   display: flex;
-  flex-flow: column;
+  flex-flow: column wrap;
   align-items: center;
   justify-content: center;
   row-gap: 4px;
+  column-gap: 0;
   background: #88139B;
   border-radius: 50%;
   transform: rotate(0);
@@ -349,14 +423,17 @@ body {
 }
 .btnRepositorie,
 .btnLiveSite {
-  display: flex;
-  flex-flow: row;
-  align-items: center;
-  justify-content: center;
-  column-gap: 8px;
+  flex: 1;
+  width: 100%;
   border-radius: 16px;
   padding: 10px 20px;
   text-decoration: none;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  row-gap: 0;
+  column-gap: 6px;
   cursor: pointer;
   color: #eeeeee;
   font-family: 'Roboto', sans-serif;
