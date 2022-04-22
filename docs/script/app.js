@@ -7,5 +7,5 @@ document.addEventListener("DOMContentLoaded", () => {
   if(document.getElementById('projects') != null) renderProjectsGithub();
   goUp();
   menuHambuerger();
-  sideBarPanel();
+  if(document.getElementById('panelInfo') != null) sideBarPanel();
 })

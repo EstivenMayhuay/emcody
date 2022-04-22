@@ -1,6 +1,8 @@
 doctype html
 html(lang="es")
   include ../includes/head.pug
+  block ownStyle
+    link(rel="stylesheet", href="../../../css/index.css")
   body
     include ../includes/header.pug
     include ../includes/navMenu.pug
@@ -8,9 +10,12 @@ html(lang="es")
     include ../includes/sideBar.pug
 
     main.main
+      :markdown-it()
+        # Breve Historia de HTML
+      //- include:markdown-it 
 
     #buttonUp
-      img(src="./images/icon-up.svg", alt="icon up" id="iconUp")
+      img(src=`${baseDeployUrlImg}/icon-up.svg`, alt="icon up" id="iconUp")
     
     #buttonMenu
       p#buttonMenu__up
@@ -19,5 +24,5 @@ html(lang="es")
     
     include ../includes/footer.pug
 
-    script(src="./script/app.js" type="module") 
+    script(src="../../../script/app.js" type="module") 
 

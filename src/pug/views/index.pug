@@ -1,6 +1,8 @@
 doctype html
 html(lang="es")
   include ../includes/head.pug
+  block ownStyle
+    link(rel="stylesheet", href="./css/index.css")
   body
     include ../includes/header.pug
     include ../includes/navMenu.pug
@@ -12,19 +14,19 @@ html(lang="es")
         h2.whatYouFind__title ¿Qué encontraras?
         .whatYouFind__contentCards
           .card
-            img(src="./images/icon-idea.svg", alt="crearemos proyectos que solucionen ciertas problematicas")
+            img(src=`${baseDeployUrlImg}/icon-idea.svg`, alt="crearemos proyectos que solucionen ciertas problematicas")
             h3.card__title Proyectos
             p.card__descp Crearemos proyectos que sean de tu agrado
           .card
-            img(src="./images/icon-code.svg", alt="analizaremos codigo nuestro y de terceros")
+            img(src=`${baseDeployUrlImg}/icon-code.svg`, alt="analizaremos codigo nuestro y de terceros")
             h3.card__title Codigo
             p.card__descp Veremos codigo de la comunidad y de terceros
           .card
-            img(src="./images/icon-videos.svg", alt="podras acceder a videos totalmente gratuitos")
+            img(src=`${baseDeployUrlImg}/icon-videos.svg`, alt="podras acceder a videos totalmente gratuitos")
             h3.card__title Videos
             p.card__descp Podrás acceder a los videos gratuitos
           .card
-            img(src="./images/icon-discord.svg", alt="tendras acceso a una comunidad dispuesta a ayudar")
+            img(src=`${baseDeployUrlImg}/icon-discord.svg`, alt="tendras acceso a una comunidad dispuesta a ayudar")
             h3.card__title Comunidad
             p.card__descp Contarás con personas dispuestas a ayudar
 
@@ -36,12 +38,12 @@ html(lang="es")
         h2.colaborators__title Colaboradores
         .colaborators__card
           p.iconPerson
-            img(src="./images/icon-estiven.svg", alt="Estive Mayhuay Frontend Developer")
+            img(src=`${baseDeployUrlImg}/icon-estiven.svg`, alt="Estive Mayhuay Frontend Developer")
           h4 Estiven Mayhuay 
           span Frontend Developer
 
     #buttonUp
-      img(src="./images/icon-up.svg", alt="icon up" id="iconUp")
+      img(src=`${baseDeployUrlImg}/icon-up.svg`, alt="icon up" id="iconUp")
     
     #buttonMenu
       p#buttonMenu__up

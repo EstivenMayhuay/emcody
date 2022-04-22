@@ -1,0 +1,28 @@
+doctype html
+html(lang="es")
+  include ../includes/head.pug
+  block ownStyle
+    link(rel="stylesheet", href="../../css/index.css")
+  body
+    include ../includes/header.pug
+    include ../includes/navMenu.pug
+    include ../includes/headSideBar.pug
+    include ../includes/sideBar.pug
+
+    main.main
+      :markdown-it()
+        # HTML5
+      //- include:markdown-it 
+
+    #buttonUp
+      img(src=`${baseDeployUrlImg}/icon-up.svg`, alt="icon up" id="iconUp")
+    
+    #buttonMenu
+      p#buttonMenu__up
+      p#buttonMenu__center
+      p#buttonMenu__down
+    
+    include ../includes/footer.pug
+
+    script(src="../../script/app.js" type="module") 
+

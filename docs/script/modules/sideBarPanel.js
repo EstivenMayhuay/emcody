@@ -3,10 +3,11 @@ const sideBarPanel = () => {
   
   d.addEventListener("click", (e) => {
     const sideBarPanel = d.getElementById('panelInfo');
-    if(e.target.matches('#buttonUp') || e.target.matches('#buttonUp *')) {
+    const iconSideBar = d.getElementById('iconSideBar').id;
+
+    if(e.target.matches(`#${iconSideBar}`) || e.target.matches(`#${panelInfo.id} *`)) {
       sideBarPanel.style.transform = 'translate(0, 0)';
-    } else if(!e.target.matches('#panelInfo') && !e.target.matches('.panelMenu *')) {
-      console.log(e.target);
+    } else if(!e.target.matches(`#${panelInfo.id}`)) {
       sideBarPanel.style.transform = 'translate(-100%, 0)';
     }
   })
