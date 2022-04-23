@@ -1,4 +1,4 @@
-const sidePanel = [
+const sidesPanel = [
   {
     id: 'html5-course',
     nav: [
@@ -7,6 +7,10 @@ const sidePanel = [
         list: [
           {
             title: 'Breve Historia',
+            link: 'http://127.0.0.1:5500/docs/post/html5/breve-historia/index.html'
+          },
+          {
+            title: '¿Que es HTML?',
             link: 'http://127.0.0.1:5500/docs/post/html5/breve-historia/index.html'
           }
         ]
@@ -38,15 +42,56 @@ const sidePanel = [
   }
 ];
 
-const storageSideBarPanel = () => {
-  console.log('save nav in storage');
-  localStorage.setItem('sidePanel', JSON.stringify(sidePanel));
+const storeSidesPanel = () => {
+  localStorage.setItem('sidesPanel', JSON.stringify(sidesPanel));
 }
 
-const getSidePanelById = (id) => {
-  const sidesPanel = JSON.parse(localStorage.getItem('sidePanel'));
-  const sidePanelFound = sidesPanel.find(sidePanel => sidePanel.id === id);
-  return sidePanelFound;
+const getSidesPanel = () => {
+  const sidesPanel = JSON.parse(localStorage.getItem('sidesPanel'));
+  return sidesPanel;
 }
 
-export {storageSideBarPanel, getSidePanelById}
+const storeCurrentSidePanel = (objSidePanel) => {
+  localStorage.setItem('currentSidePanel', JSON.stringify(objSidePanel));
+}
+
+const renderCurrentSidePanel = () => {
+  if(JSON.parse(localStorage.getItem('currentSidePanel')) != null) {
+    const currSidePanel = JSON.parse(localStorage.getItem('currentSidePanel'));
+    const panelMenu = document.querySelector('.panelMenu');
+    const fragment = document.createDocumentFragment();
+    
+    currSidePanel.nav.forEach(navItem => {
+      const details = document.createElement('details');
+      const summary = document.createElement('summary');
+      const ul = document.createElement('ul');
+      
+      summary.textContent = navItem.summary;
+            
+      navItem.list.map(list => {
+        const li = document.createElement('li');
+        const a = document.createElement('a');
+
+        a.href = list.link;
+        a.textContent = list.title;
+        
+        li.appendChild(a);
+        ul.appendChild(li);
+      })
+
+      details.appendChild(summary);
+      details.appendChild(ul);
+      fragment.appendChild(details);
+
+      // events details
+      details.addEventListener("click", () => {
+        if(details.open === true) details.open = false;
+        else details.open = true;
+      })
+    });
+
+    if(panelMenu != null) panelMenu.appendChild(fragment);
+  }
+}
+
+export {storeSidesPanel, getSidesPanel, storeCurrentSidePanel, renderCurrentSidePanel}
