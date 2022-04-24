@@ -1,6 +1,6 @@
 # **HTML5**
 
-Bienvenidos y Bienivedas a esta seccion en donde hablaremos sobre una de las tecnolgoias base para el desarrollo web.
+Bienvenidos y Bienvenidas a esta seccion en donde hablaremos sobre una de las **tecnologias base para el desarrollo web.** 
 
 En dicha seccion podras ver los siguientes temas:
 
@@ -10,7 +10,7 @@ En dicha seccion podras ver los siguientes temas:
 - Etiquetas semanticas
 - Formularios
 
-Ahora bine, para poder trabajar con esta tecnlogia necesitaremos las siguientes herramientas:
+Ahora bien, para poder trabajar con esta tecnologia necesitaremos las siguientes herramientas:
 
 - Navegador
 - Editor de Codigo (Atom, Visual Studio Code, Sublime Text)

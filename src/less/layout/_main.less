@@ -2,6 +2,7 @@
 .main {
   .mixin-display-flex(column, wrap, initial, initial, 48px, 0);
   max-width: 100%;
+  height: 100%;
 
   // Section Banner
   .home {
@@ -161,6 +162,41 @@
 
       span {
         .mixin-fonts(@black-grayish, @font-roboto, 600, @headline-6);
+      }
+    }
+  }
+
+  // Intro
+  [class*="intro-"] {
+    @gapRow: 24px;
+    margin-bottom: @gapRow * 1.5;
+
+    padding: 1em;
+
+    h1 {
+      .mixin-fonts(@color-primary, @font-firaCode, 600, @headline-4);
+      text-align: center;
+      margin-bottom: @gapRow;
+    }
+
+    p {
+      .mixin-fonts(@black-grayish, @font-roboto, 400, @body-2);
+      line-height: 1.6rem;
+      margin-bottom: @gapRow;
+      
+      strong {
+        color: @color-primary;
+      }
+    }
+
+    ul {
+      .mixin-display-flex(column, wrap, initial, flex-start,0.5em,0);
+      list-style: disc;
+      padding: 0 0 0 2em;
+      margin-bottom: @gapRow;
+
+      li {
+        .mixin-fonts(@black-grayish, @font-roboto, 400, @body-2);
       }
     }
   }

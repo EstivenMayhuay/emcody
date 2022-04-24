@@ -163,6 +163,7 @@ body {
   row-gap: 48px;
   column-gap: 0;
   max-width: 100%;
+  height: 100%;
 }
 .main .home {
   position: relative;
@@ -362,6 +363,46 @@ body {
   font-family: 'Roboto', sans-serif;
   font-weight: 600;
   font-size: 17px;
+}
+.main [class*="intro-"] {
+  margin-bottom: 36px;
+  padding: 1em;
+}
+.main [class*="intro-"] h1 {
+  color: #88139B;
+  font-family: 'Fira Code', monospace;
+  font-weight: 600;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+.main [class*="intro-"] p {
+  color: #404040;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.6rem;
+  margin-bottom: 24px;
+}
+.main [class*="intro-"] p strong {
+  color: #88139B;
+}
+.main [class*="intro-"] ul {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: initial;
+  justify-content: flex-start;
+  row-gap: 0.5em;
+  column-gap: 0;
+  list-style: disc;
+  padding: 0 0 0 2em;
+  margin-bottom: 24px;
+}
+.main [class*="intro-"] ul li {
+  color: #404040;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
 }
 /* Footer */
 .footer {
