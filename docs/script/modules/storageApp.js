@@ -51,6 +51,11 @@ const getSidesPanel = () => {
   return sidesPanel;
 }
 
+const getSidePanelById = (id) => {
+  const sidesPanel = getSidesPanel();
+  return sidesPanel.find(sidePanel => sidePanel.id === id);
+}
+
 const storeCurrentSidePanel = (objSidePanel) => {
   localStorage.setItem('currentSidePanel', JSON.stringify(objSidePanel));
 }
@@ -58,40 +63,43 @@ const storeCurrentSidePanel = (objSidePanel) => {
 const renderCurrentSidePanel = () => {
   if(JSON.parse(localStorage.getItem('currentSidePanel')) != null) {
     const currSidePanel = JSON.parse(localStorage.getItem('currentSidePanel'));
+    console.log(currSidePanel);
     const panelMenu = document.querySelector('.panelMenu');
     const fragment = document.createDocumentFragment();
-    
+
     currSidePanel.nav.forEach(navItem => {
       const details = document.createElement('details');
       const summary = document.createElement('summary');
       const ul = document.createElement('ul');
-      
-      summary.textContent = navItem.summary;
-            
-      navItem.list.map(list => {
-        const li = document.createElement('li');
-        const a = document.createElement('a');
 
-        a.href = list.link;
-        a.textContent = list.title;
-        
-        li.appendChild(a);
-        ul.appendChild(li);
-      })
+      if(panelMenu.innerHTML.length == 0) {
+        summary.textContent = navItem.summary;
+              
+        navItem.list.map(list => {
+          const li = document.createElement('li');
+          const a = document.createElement('a');
 
-      details.appendChild(summary);
-      details.appendChild(ul);
-      fragment.appendChild(details);
+          a.href = list.link;
+          a.textContent = list.title;
+          
+          li.appendChild(a);
+          ul.appendChild(li);
+        })
 
-      // events details
-      details.addEventListener("click", () => {
-        if(details.open === true) details.open = false;
-        else details.open = true;
-      })
+        details.appendChild(summary);
+        details.appendChild(ul);
+        fragment.appendChild(details);
+
+        // events details
+        details.addEventListener("click", () => {
+          if(details.open) details.open = false;
+          else details.open = true;
+        })
+      }
     });
 
     if(panelMenu != null) panelMenu.appendChild(fragment);
   }
 }
 
-export {storeSidesPanel, getSidesPanel, storeCurrentSidePanel, renderCurrentSidePanel}
+export {storeSidesPanel, getSidesPanel, storeCurrentSidePanel, renderCurrentSidePanel, getSidePanelById}

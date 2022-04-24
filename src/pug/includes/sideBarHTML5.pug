@@ -1,0 +1,31 @@
+- 
+  const navHTML5 = [
+    {
+      summary: 'HTML5 Basico',
+      list: [
+        {
+          title: 'Breve Historia',
+          link: '#'
+        }
+      ]
+    },
+    {
+      summary: 'Tags HTML',
+      list: [
+        {
+          title: 'Encabezados',
+          link: '#'
+        }
+      ]
+    },
+  ];
+
+aside.panel#panelInfo
+  nav.panelMenu
+    each item in navHTML5
+      details.panelMenu__indice
+        summary= item.summary
+        each list in item.list
+          ul
+            li
+              a(href=`${list.link}`)= list.title
