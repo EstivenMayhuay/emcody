@@ -168,15 +168,26 @@
 
   // Intro
   [class*="intro-"] {
-    @gapRow: 24px;
-    margin-bottom: @gapRow * 1.5;
+    @gapRow: 16px;
 
+    margin-bottom: @gapRow * 1.5;
     padding: 1em;
 
     h1 {
       .mixin-fonts(@color-primary, @font-firaCode, 600, @headline-4);
       text-align: center;
       margin-bottom: @gapRow;
+    }
+
+    .image {
+      overflow: hidden;
+      width: 80%;
+      height: auto;
+      margin: 0 auto @gapRow auto;
+
+      img {
+        .mixin-coverImage();
+      }
     }
 
     p {
@@ -190,7 +201,7 @@
     }
 
     ul {
-      .mixin-display-flex(column, wrap, initial, flex-start,0.5em,0);
+      .mixin-display-flex(column, wrap, initial, flex-start,0.85em,0);
       list-style: disc;
       padding: 0 0 0 2em;
       margin-bottom: @gapRow;

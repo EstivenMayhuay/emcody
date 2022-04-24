@@ -1,19 +1,41 @@
 # **HTML5**
 
-Bienvenidos y Bienvenidas a esta seccion en donde hablaremos sobre una de las **tecnologias base para el desarrollo web.** 
+Bienvenidos y Bienvenidas a esta sección en donde hablaremos sobre una de las **tecnologías fundamentales para el desarrollo web.** HTML, es un lenguaje que debemos aprender si queremos estructurar nuestras websites de una mejor forma.
 
-En dicha seccion podras ver los siguientes temas:
+Por lo cual, veremos los siguientes temas:
 
-- HTML Basico
-- Estrutura HTML
+- HTML Básico
+- Estructura HTML
 - Tags en HTML
-- Etiquetas semanticas
+- Etiquetas semánticas
 - Formularios
+- Canvas
+- API's y mucho más
 
-Ahora bien, para poder trabajar con esta tecnologia necesitaremos las siguientes herramientas:
+Ahora bien, para poder trabajar con esta tecnología necesitaremos las siguientes herramientas:
 
-- Navegador
+- Navegador (Chrome, Firefox, Opera, Safari)
 - Editor de Codigo (Atom, Visual Studio Code, Sublime Text)
 - Conexion a Internet
 
-Asi que, sin mas preambulos dirigite al panel de navegacion para empezar a aprender
+Para los **Navegadores** no existe uno en especial. Sin embargo, podemos optar por **Google Chrome y Firefox** esto debido que ambos navegadores tienen muy buenas **Dev Tools (Herramientas de Desarrollo)**.
+
+**Dev Tool Chrome**
+
+<p class="image">
+  <img src="../../images/devToolChrome.jpeg" alt="dev tool chrome">
+</p>
+
+**Dev Tool Firefox**
+
+<p class="image">
+  <img src="../../images/devToolFirefox.jpeg" alt="dev tool firefox">
+</p>
+
+En el caso de **los editores de código**, tenemos la total libertad de usar el que más nos guste. A continuación te compartiré las diferentes plataformas que puedes utilizar.
+
+- [Download Visual Studio Code](https://code.visualstudio.com/download)
+- [Download Sublime Text](https://www.sublimetext.com/3)
+- [Download Atom](https://atom.io/)
+
+Y en el internet 😆 no sé que decir, pero creo que todos tenemos internet. Así que, sin más preambulos, dirígete al panel de navegación para empezar a aprender.
