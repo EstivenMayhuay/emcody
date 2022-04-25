@@ -176,9 +176,24 @@
       margin-bottom: @gapRow;
     }
 
+    h2 {
+      position: relative;
+      .mixin-fonts(@color-primary, @font-firaCode, 600, @headline-5);
+      margin-bottom: @gapRow;
+      text-decoration: underline @color-primary;
+    }
+
+    iframe {
+      margin-bottom: @gapRow;
+    }
+
     pre {
-      padding: 0 0 0 2em;
-      margin: 0 0 @gapRow 0;
+      max-width: 280px;
+      margin: 0 auto @gapRow auto;
+
+      code {
+        overflow-x: scroll;
+      }
     }
 
     .image {

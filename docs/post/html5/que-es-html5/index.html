@@ -55,6 +55,9 @@
           <ul>
             <li><a href="http://127.0.0.1:5500/docs/post/html5/que-es-html5/index.html">¿Qué es HTML5?</a></li>
           </ul>
+          <ul>
+            <li><a href="http://127.0.0.1:5500/docs/post/html5/estructura-basica-html/index.html">Estructura Básica</a></li>
+          </ul>
         </details>
         <details class="panelMenu__indice">
           <summary>Tags HTML</summary>
@@ -66,6 +69,68 @@
     </aside>
     <main class="main">
       <section class="intro-HTML5"><h1>¿Qué es HTML5?</h1>
+<p>Entendiendo que HTML es un lenguaje de marcado de información que permite definir y estructurar los datos en nuestros sitios web. Surge la interrogante 😞 ¿Qué es HTML5?, aquí vamos con la respuesta.</p>
+<p><strong>HTML5, es una nueva versión con un conjunto de mejoras que comprenden nuevas funcionalidades al lenguaje HTML</strong>. Pero, ¿Qué tipo de mejoras?</p>
+<ul>
+<li>Etiquetas Semánticas (header, section, main, article, aside, nav, footer)</li>
+<li>API integradas en el navegador (Canvas, IndexedDB, LocalStorage, Audio, Video, Drag &amp; Drop y mucho más)</li>
+<li>Soporte a Formularios, SVG, MathML</li>
+</ul>
+<p>Como puedes apreciar en la lista, HTML no es un simple lenguaje, tiene muchas funcionalidades que hacen más fácil el trabajo de los desarrolladores web. Vamos a verlo a detalle.</p>
+<h2>Etiquetas semánticas</h2>
+<p>Antes de HTML5, si querías dividir tu sitio web en diferentes secciones tenias que hacer uso de los <strong>famosos div y tables</strong>, era muy engorroso, difícil de entender y mantener y para una prueba basta que veas el código de abajo 👇</p>
+<iframe width="100%" height="300" src="//jsfiddle.net/estivenm/ehvmb7nw/embedded/html,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+<p>Estamos usando <strong>JSFIDDLE</strong>, selecciona en la parte donde dice <strong>HTML</strong> verás el código en donde encontraras un conjunto de elementos <strong>(table, tr, td, th)</strong></p>
+<p>Está todo muy enredado 😄, gracias al <strong>Dios de la programación</strong> llegaron las etiquetas semánticas, es decir, son aquellos tags creados con un significado, con un propósito especifico.</p>
+<p>Tenemos a <strong>header</strong> que nos permite definir la cabecera de nuestro sitio web, <strong>nav</strong> para definir los elementos que conformaran nuestro menú de navegación, <strong>section</strong> en el cual se define la información relevante de nuestro sitio y <strong>footer</strong> representa el pie de página, el final del sitio web. Pero vayamos al código para que lo entiendas mejor ahora <strong>ya no usaremos tablas, sino semantic tags</strong></p>
+<p>Como puedes apreciar en el código HTML, toda está sencillo, entendible y con un significado cierto. Por ejemplo:</p>
+<ul>
+<li><strong>La etiqueta p</strong> para los párrafos</li>
+<li><strong>La etiqueta h1,h2</strong> para los encabezados</li>
+<li><strong>La etiqueta ul</strong> para listas no ordenadas</li>
+<li><strong>La etiqueta li</strong> son los list items</li>
+<li><strong>La etiqueta a</strong> son los enlaces (links)</li>
+</ul>
+<iframe width="100%" height="300" src="//jsfiddle.net/estivenm/xu38zLjb/2/embedded/html,css,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+<p>Probablemente, si estás usando EMCODY en un móvil se vea todo desordenado y esto es debido a que nos estamos haciendo uso del <strong>CSS para lograr el Responsive Web Design</strong> tema del cual hablaremos en el curso de CSS.</p>
+<p>Ahora bien, si visualizas el código HTML y lo comparas con el anterior código hecho con tablas. ¿Cuál crees tú que es mejor? ¿Cuál es más entendible y fácil de leer? ¿Con cuál código te quedas?</p>
+<h2>API's Integradas</h2>
+<p>Primero vamos a definir que es una API. Bueno, una <strong>API (Application Programming Interface)</strong> en términos sencillos, son un conjunto de métodos y funcionalidades para manejar los datos que son otorgados por una aplicación para conectarse a otras aplicaciones. Por ejemplo, Tenemos la <strong>API de Spotify</strong>, la cual nos permite consumir las canciones que tienen y podemos usar dichos datos en nuestra propia aplicación. Es decir, una es la forma en que nuestras aplicaciones pueden consumir datos de terceros.</p>
+<p>Ahora bien, Spotify es una API externa, en el caso de las API's integradas en el navegador el concepto es el mismo con la diferencia que está a nuestra disposición y no tenemos que pagar por una membresía para tener acceso a sus funcionalidades.</p>
+<p><strong>API LocalStorage</strong> permite la persistencia de los datos almacenándolo con ciertas limitaciones. Por ejemplo: podemos guardar el valor de un modo oscuro, para mantener la persistencia de los datos, así al recargar la página se mantendrá el modo oscuro.</p>
+<pre><code class="language-javascript">/*
+guardando el modo oscuro así al recargar
+la página se mantendrá el modo oscuro
+*/
+localStorage.setItem(&quot;theme&quot;, &quot;dark-mode&quot;);
+
+// trayendo el valor del theme
+localStorage.getItem(&quot;theme&quot;);
+</code></pre>
+<p><strong>API Canvas</strong> esta es una API del navegador que nos permite hacer dibujos, letras, formas en un formato 2D y 3D. 👷‍♂️ Vamos a dibujar un círculo.</p>
+<p>Este será nuestro código HTML</p>
+<pre><code class="language-html">&lt;!-- canvas será nuestro lienzo donde dibujaremos --&gt;
+&lt;canvas id=&quot;mycanvas&quot; width=&quot;300px&quot; height=&quot;300px&quot;&gt;&lt;/canvas&gt;
+</code></pre>
+<p>Este será nuestro código CSS</p>
+<pre><code class="language-css">#mycanvas {
+  border: 2px solid blue;
+}
+</code></pre>
+<p>Este será nuestro código javascript</p>
+<pre><code class="language-javascript">const lienzo = document.getElementById(&quot;mycanvas&quot;);
+const ctx = lienzo.getContext(&quot;2d&quot;);
+
+ctx.beginPath();
+ctx.arc(150, 150, 40, 0, 2 * Math.PI);
+ctx.fillStyle = &quot;#8040ea&quot;;
+ctx.fill();
+</code></pre>
+<p>Como ya habrás notado para usar la API Canvas estamos haciendo uso de 3 lenguajes <strong>(HTML, CSS y JavaScript)</strong>, esto quiere decir que a mediada que quieras usar las API's integradas del navegador será necesario que conozcas más de los otros lenguajes de la web.</p>
+<h2>Soporte Formularios</h2>
+<p>Gracias al poder del Dios de la programacion y a los miles de progamadores que trabajan en las neuvas emjoras del neugaje tenemos por fin las <strong>validadciones por defecto de los formularios sin necsidad de JavaScript</strong> todo con un solo atributo. Claro esta que para validaciones basicas, ya que para validaciones mas complejas se necesitara a nuestro buen amigo 👉 JavaScript. Veamos un ejemplo</p>
+<iframe width="100%" height="300" src="//jsfiddle.net/estivenm/bn7v9u5j/3/embedded/html,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+<p>Trata de ingresar datos incorrectos como en el campo celular ingresa letras y en el campo email ingresa un nombre y luego presiona enviar, podrás ver que gracias a HTML5 y sus mejoras te avisara en el caso de email que debe tener un <strong>@</strong> y en el campo celular no te dejara escribir letras.</p>
 
       </section>
     </main>

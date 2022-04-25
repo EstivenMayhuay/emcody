@@ -29,6 +29,7 @@ body {
   display: block;
   max-width: 100%;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 /* header */
 .header {
@@ -379,12 +380,24 @@ body {
   text-align: center;
   margin-bottom: 16px;
 }
+.main [class*="intro-"] h2 {
+  position: relative;
+  color: #88139B;
+  font-family: 'Fira Code', monospace;
+  font-weight: 600;
+  font-size: 21px;
+  margin-bottom: 16px;
+  text-decoration: underline #88139B;
+}
+.main [class*="intro-"] iframe {
+  margin-bottom: 16px;
+}
 .main [class*="intro-"] pre {
-  padding: 0 0 0 2em;
-  margin: 0 0 16px 0;
+  max-width: 280px;
+  margin: 0 auto 16px auto;
 }
 .main [class*="intro-"] pre code {
-  color: #404040;
+  overflow-x: scroll;
 }
 .main [class*="intro-"] .image {
   overflow: hidden;
