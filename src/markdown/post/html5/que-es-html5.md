@@ -93,3 +93,28 @@ Gracias al poder del Dios de la programacion y a los miles de progamadores que t
 <iframe width="100%" height="300" src="//jsfiddle.net/estivenm/bn7v9u5j/3/embedded/html,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
 Trata de ingresar datos incorrectos como en el campo celular ingresa letras y en el campo email ingresa un nombre y luego presiona enviar, podrás ver que gracias a HTML5 y sus mejoras te avisara en el caso de email que debe tener un **@** y en el campo celular no te dejara escribir letras.
+
+## SVG
+
+Scalable Vector Graphics son vectores gráficos que nos permiten mantener la calidad de nuestra imágenes sin importar el tamaño. Habrás notado que cuando usamos imágenes en formato **.jpg, .png, .jpeg** las cuales al ser agrandados se ven borrosos o pixelados. Hagamos un SVG muy sencillo.
+
+El código de 👇 generará un círculo que será escalable a pesar de tener 50x50 px y no perderá su calidad.
+
+```html
+<svg width="50" height="50">
+  <circle
+    cx="25"
+    cy="25"
+    r="10"
+    stroke="#8040ea"
+    stroke-width="4"
+    fill="#8040ea"
+  />
+</svg>
+```
+
+## MathML
+
+Es una de las funcionalidades de HTML5 que permite escribir notaciones matematicas.
+
+En conclusión, podemos decir que HTML5 es una de las mejores versiones que tenemos hasta el momento, como habrás podido apreciar, ahora pasemos al siguiente nivel.

@@ -68,7 +68,44 @@
       </nav>
     </aside>
     <main class="main">
-      <section class="intro-HTML5"></section>
+      <section class="intro-HTML5"><h1>Estructura Básica de HTML</h1>
+<p>Ahora que ya definimos ¿Qué es HTML y HTML5? Vamos a definir Cuál es la estructura básica de un documento HTML.</p>
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;es&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;title&gt;EMCODY&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Welcome to EMCODY&lt;/h1&gt;
+    &lt;p&gt;Este es el primer párrafo de emcody&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<p>Lo sé tal vez estés pensando <strong>¿Esto es todo?</strong>, pues si 😎 es todo para empezar con lo básico. Ahora vamos, a desglosarlo.</p>
+<p>Antes de todo es importante que sepas que HTML trabaja con <strong>etiquetas llamadas también tags</strong>, todo en HTML se trabajan con etiquetas. La mayoría de las etiquetas tienen una <strong>etiqueta de apertura y cierre</strong>, y otros tienen una singularidad.</p>
+<p>A continuación, veamos una etiqueta de párrafo, la etiqueta de apertura se distingue por el siguiente símbolo <strong>&lt;&gt;</strong> y la etiqueta de cierre por el siguiente símbolo <strong>&lt;/&gt;</strong>, estos símbolos lo tienen la mayoría de los tags.</p>
+<pre><code class="language-html">&lt;p&gt;Soy un parrafo&lt;/p&gt;
+</code></pre>
+<p>Ahora bien, hay otras etiquetas como la siguiente que tienen una etiqueta de apertura y en la misma se encuentra la etiqueta de cierre <strong>&lt;/&gt;</strong>.</p>
+<p>Esta es una etiqueta de imagen <strong>src</strong> es la ruta donde se encuentra la imagen y <strong>alt</strong> hace referencia a lo que trata la imagen. También, tenemos la etiqueta <strong>input</strong> la cual sirve para ingresar datos.</p>
+<pre><code class="language-html">&lt;img src=&quot;estiven.png&quot; alt=&quot;hola soy estiven&quot; /&gt; &lt;input type=&quot;text&quot; id=&quot;name&quot; /&gt;
+</code></pre>
+<p>Habiendo definido los tags en HTML, procederemos a hablar de las etiquetas fundamentales en la estructura Básica de HTML.</p>
+<h2>DOCTYPE html</h2>
+<p>Esta etiqueta permite decirle al navegador que trabajaremos con la última versión de HTML5 y además al momento de ser interpretado por el navegador sabrá que se trata del lenguaje HTML y no de otro tipo de lenguaje.</p>
+<h2>html</h2>
+<p>La etiqueta <strong>html</strong> es la raíz de nuestro documento HTML en sí, dentro de la etiqueta html se engloba las otras dos etiquetas <strong>head y body</strong>, además de ello notaras que las etiquetas tienen propiedades. En el caso de html tiene <strong>el atributo language con el valor de español =&gt; lang=&quot;es&quot;</strong>.</p>
+<h2>head</h2>
+<p>La etiqueta head hace referencia a todos aquellos datos que son necesarios para el navegador, como los metacomandos que permitan usar <strong>caracteres especiales, responsive web design, definir un título, enlazar documentos, CSS y JavaScript, entre otros</strong>. En pocas palabras en la etiqueta head se engloba todo lo que el <strong>usuario no podra ver, pero el navegador necesita</strong>.</p>
+<h2>body</h2>
+<p>En el caso de la etiqueta body, es todo <strong>aquello que el usuario final podrá visualizar como títulos, imágenes, videos, entre otros</strong>.</p>
+<p>Ahora, veamos la estructura básica de HTML desde un punto de vista jerárquico, es decir, con una <strong>estructura de árbol</strong>.</p>
+<p class="image">
+<img src="../../../images/estructura-arbol-html.jpg" alt="estructura jerárquica HTML" />
+</p>
+
+      </section>
     </main>
     <div id="buttonMenu">
       <p id="buttonMenu__up"></p>
