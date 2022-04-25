@@ -2,9 +2,9 @@ doctype html
 html(lang="es")
   include ../includes/head.pug
   block titlePage
-    title= 'HTML5 - Desarrollo Web'
+    title= '¿Qué es HTML?'
   block ownStyle
-    link(rel="stylesheet", href="../../css/index.css")
+    link(rel="stylesheet", href="../../../css/index.css")
   body
     include ../includes/header.pug
     include ../includes/navMenu.pug
@@ -13,7 +13,7 @@ html(lang="es")
 
     main.main
       section.intro-HTML5
-        include:markdown-it(html) ../../../src/markdown/post/html5/index.md
+        include:markdown-it(html) ../../../src/markdown/post/html5/que-es-html.md
 
     //- #buttonUp
     //-   img(src=`${baseDeployUrlImg}/icon-up.svg`, alt="icon up" id="iconUp")
@@ -25,4 +25,5 @@ html(lang="es")
     
     include ../includes/footer.pug
 
-    script(src="../../script/app.js" type="module")
+    script(src="../../../script/app.js" type="module") 
+

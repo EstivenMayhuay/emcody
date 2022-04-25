@@ -19,8 +19,8 @@
     <!-- title page-->
     <!-- own stylesheet-->
   </head>
-  <title>EMCODY - Desarrollo Web</title>
-  <link rel="stylesheet" href="./css/index.css">
+  <title>¿Qué es HTML5?</title>
+  <link rel="stylesheet" href="../../../css/index.css">
   <body>
     <!-- - let baseDeployUrlImg = "http://estivenmayhuay.github.com/docs/images";-->
     <header class="header"><img class="header__icon" src="http://127.0.0.1:5500/docs/images/logo-emcody.svg" alt="emcody logo">
@@ -38,54 +38,43 @@
         <li class="menu__item"><a class="menu__link" href="#">Bash</a></li>
       </ul>
     </nav>
+    <p class="headSideBar"><img src="http://127.0.0.1:5500/docs/images/icon-dashboard.svg" alt="icon dashboard" id="iconSideBar"></p>
+    <aside class="panel" id="panelInfo">
+      <nav class="panelMenu">
+        <details class="panelMenu__indice">
+          <summary>HTML5 Basico</summary>
+          <ul>
+            <li><a href="http://127.0.0.1:5500/docs/post/html5/index.html">Intro</a></li>
+          </ul>
+          <ul>
+            <li><a href="http://127.0.0.1:5500/docs/post/html5/breve-historia/index.html">Breve Historia</a></li>
+          </ul>
+          <ul>
+            <li><a href="http://127.0.0.1:5500/docs/post/html5/que-es-html/index.html">¿Qué es HTML?</a></li>
+          </ul>
+          <ul>
+            <li><a href="http://127.0.0.1:5500/docs/post/html5/que-es-html5/index.html">¿Qué es HTML5?</a></li>
+          </ul>
+        </details>
+        <details class="panelMenu__indice">
+          <summary>Tags HTML</summary>
+          <ul>
+            <li><a href="#">Encabezados</a></li>
+          </ul>
+        </details>
+      </nav>
+    </aside>
     <main class="main">
-      <section class="home">
-        <div class="home__bg"><img src="./images/wave-intro.svg" alt="bg emcody"></div>
-        <div class="home__info">
-          <h1>Desarrollo Web con EMCODY</h1>
-          <p>¡Hola! Si te estás iniciando en el mundo del desarrollo web, este estu sitio para aprender HTML5, CSS3, JavaScript, Frameworks, y más</p>
-        </div>
-      </section>
-      <section class="whatYouFind">
-        <h2 class="whatYouFind__title">¿Qué encontraras?</h2>
-        <div class="whatYouFind__contentCards">
-          <div class="card"><img src="http://127.0.0.1:5500/docs/images/icon-idea.svg" alt="crearemos proyectos que solucionen ciertas problematicas">
-            <h3 class="card__title">Proyectos</h3>
-            <p class="card__descp">Crearemos proyectos que sean de tu agrado</p>
-          </div>
-          <div class="card"><img src="http://127.0.0.1:5500/docs/images/icon-code.svg" alt="analizaremos codigo nuestro y de terceros">
-            <h3 class="card__title">Codigo</h3>
-            <p class="card__descp">Veremos codigo de la comunidad y de terceros</p>
-          </div>
-          <div class="card"><img src="http://127.0.0.1:5500/docs/images/icon-videos.svg" alt="podras acceder a videos totalmente gratuitos">
-            <h3 class="card__title">Videos</h3>
-            <p class="card__descp">Podrás acceder a los videos gratuitos</p>
-          </div>
-          <div class="card"><img src="http://127.0.0.1:5500/docs/images/icon-discord.svg" alt="tendras acceso a una comunidad dispuesta a ayudar">
-            <h3 class="card__title">Comunidad</h3>
-            <p class="card__descp">Contarás con personas dispuestas a ayudar</p>
-          </div>
-        </div>
-      </section>
-      <section class="ourProjects">
-        <h2 class="ourProjects__title">Nuestros Proyectos</h2>
-        <div id="projects"></div>
-      </section>
-      <section class="colaborators">
-        <h2 class="colaborators__title">Colaboradores</h2>
-        <div class="colaborators__card">
-          <p class="iconPerson"><img src="http://127.0.0.1:5500/docs/images/icon-estiven.svg" alt="Estive Mayhuay Frontend Developer"></p>
-          <h4>Estiven Mayhuay </h4><span>Frontend Developer</span>
-        </div>
+      <section class="intro-HTML5"><h1>¿Qué es HTML5?</h1>
+
       </section>
     </main>
-    <div id="buttonUp"><img src="http://127.0.0.1:5500/docs/images/icon-up.svg" alt="icon up" id="iconUp"></div>
     <div id="buttonMenu">
       <p id="buttonMenu__up"></p>
       <p id="buttonMenu__center"></p>
       <p id="buttonMenu__down"></p>
     </div>
     <footer class="footer"><span> © Copyright EMCODY 2022</span></footer>
-    <script src="./script/app.js" type="module"> </script>
+    <script src="../../../script/app.js" type="module"> </script>
   </body>
 </html>

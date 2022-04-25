@@ -8,13 +8,13 @@
   .home {
     position: relative;
     width: 100%;
-    
+
     &__bg {
       height: @hBannerMobile;
 
       img {
         .mixin-coverImage();
-      } 
+      }
     }
 
     &__info {
@@ -27,7 +27,8 @@
       width: 80%;
       margin: auto;
 
-      h1, p {
+      h1,
+      p {
         text-align: center;
       }
 
@@ -39,7 +40,6 @@
         .mixin-fonts (@white-grayish, @font-roboto, 500, @headline-6);
         line-height: 1.6em;
       }
-
     }
   }
 
@@ -68,7 +68,7 @@
         &__title {
           .mixin-fonts(@white-grayish, @font-firaCode, 700, @headline-6);
         }
-        
+
         &__descp {
           line-height: 1.6em;
           .mixin-fonts(@white-grayish, @font-roboto, 500, @subtitle-1);
@@ -80,7 +80,6 @@
 
   // Section Our Projects
   .ourProjects {
-    
     &__title {
       text-align: center;
       .mixin-fonts(@black-grayish, @font-firaCode, 600, @headline-5);
@@ -89,7 +88,7 @@
 
     #projects {
       .mixin-display-flex(column, wrap, center, none, 24px, 0);
-      
+
       .cardProject {
         width: @wCardProjects;
         .mixin-display-flex(column, wrap, center, flex-start, 24px, 0);
@@ -118,18 +117,16 @@
             .mixin-fonts(@white, @font-roboto, 500, @body-2);
           }
         }
-
       }
-    }    
+    }
   }
 
   // Section Colaborators
   .colaborators {
     // outline: 2px solid blue;
-    padding: 24px 0; 
+    padding: 24px 0;
     margin-bottom: 48px;
 
-    
     &__title {
       text-align: center;
       .mixin-fonts(@black-grayish, @font-firaCode, 600, @headline-5);
@@ -152,7 +149,7 @@
         .mixin-shadow-elements(2px, 4px, 8px, 0px, rgba(64, 64, 64, 0.25));
 
         img {
-          .mixin-coverImage()
+          .mixin-coverImage();
         }
       }
 
@@ -179,6 +176,11 @@
       margin-bottom: @gapRow;
     }
 
+    pre {
+      padding: 0 0 0 2em;
+      margin: 0 0 @gapRow 0;
+    }
+
     .image {
       overflow: hidden;
       width: 80%;
@@ -194,7 +196,7 @@
       .mixin-fonts(@black-grayish, @font-roboto, 400, @body-2);
       line-height: 1.6rem;
       margin-bottom: @gapRow;
-      
+
       strong {
         color: @color-primary;
       }
@@ -208,6 +210,11 @@
 
       li {
         .mixin-fonts(@black-grayish, @font-roboto, 400, @body-2);
+        line-height: 1.6rem;
+
+        strong:nth-child(1) {
+          color: @color-primary;
+        }
       }
     }
   }
