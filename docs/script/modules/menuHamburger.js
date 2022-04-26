@@ -3,7 +3,6 @@ const menuHambuerger = () => {
 
   d.addEventListener("click", (e) => {
     // show and hide the main menu
-    console.log(e.target);
     if (e.target.matches("#buttonMenu") || e.target.matches("#buttonMenu *")) {
       const hMenu = d.querySelector(".menu").offsetHeight;
 
