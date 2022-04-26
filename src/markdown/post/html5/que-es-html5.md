@@ -14,9 +14,9 @@ Como puedes apreciar en la lista, HTML no es un simple lenguaje, tiene muchas fu
 
 Antes de HTML5, si querías dividir tu sitio web en diferentes secciones tenias que hacer uso de los **famosos div y tables**, era muy engorroso, difícil de entender y mantener y para una prueba basta que veas el código de abajo 👇
 
-<iframe width="100%" height="300" src="//jsfiddle.net/estivenm/ehvmb7nw/embedded/html,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+**[Link a Codepen.io estructura con tablas](https://codepen.io/estivenMayhuay/pen/rNpgbbx)**
 
-Estamos usando **JSFIDDLE**, selecciona en la parte donde dice **HTML** verás el código en donde encontraras un conjunto de elementos **(table, tr, td, th)**
+Estamos usando **Codepen.io**, selecciona en la parte donde dice **HTML** verás el código en donde encontraras un conjunto de elementos **(table, tr, td, th)**
 
 Está todo muy enredado 😄, gracias al **Dios de la programación** llegaron las etiquetas semánticas, es decir, son aquellos tags creados con un significado, con un propósito especifico.
 
@@ -30,7 +30,7 @@ Como puedes apreciar en el código HTML, toda está sencillo, entendible y con u
 - **La etiqueta li** son los list items
 - **La etiqueta a** son los enlaces (links)
 
-<iframe width="100%" height="300" src="//jsfiddle.net/estivenm/xu38zLjb/2/embedded/html,css,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+**[Link a Codepen.io Estructura con etiquetas semánticas](https://codepen.io/estivenMayhuay/pen/dyJEEwQ)**
 
 Probablemente, si estás usando EMCODY en un móvil se vea todo desordenado y esto es debido a que nos estamos haciendo uso del **CSS para lograr el Responsive Web Design** tema del cual hablaremos en el curso de CSS.
 
@@ -90,7 +90,7 @@ Como ya habrás notado para usar la API Canvas estamos haciendo uso de 3 lenguaj
 
 Gracias al poder del Dios de la programacion y a los miles de progamadores que trabajan en las neuvas emjoras del neugaje tenemos por fin las **validadciones por defecto de los formularios sin necsidad de JavaScript** todo con un solo atributo. Claro esta que para validaciones basicas, ya que para validaciones mas complejas se necesitara a nuestro buen amigo 👉 JavaScript. Veamos un ejemplo
 
-<iframe width="100%" height="300" src="//jsfiddle.net/estivenm/bn7v9u5j/3/embedded/html,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+**[Link a Codepen.io Soporte formularios HTML](https://codepen.io/estivenMayhuay/pen/LYeowXW)**
 
 Trata de ingresar datos incorrectos como en el campo celular ingresa letras y en el campo email ingresa un nombre y luego presiona enviar, podrás ver que gracias a HTML5 y sus mejoras te avisara en el caso de email que debe tener un **@** y en el campo celular no te dejara escribir letras.
 

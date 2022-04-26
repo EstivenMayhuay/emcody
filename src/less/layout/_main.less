@@ -17,28 +17,38 @@
       }
     }
 
-    &__info {
+    &__content {
       position: absolute;
       top: 24px;
-      left: 0;
-      right: 0;
       bottom: 0;
-      .mixin-display-flex(column, wrap, initial, initial, 1em, 0);
-      width: 80%;
+      .mixin-display-flex(row, nowrap, initial, initial, 0, 0);
       margin: auto;
+      width: 100%;
+      height: auto;
 
-      h1,
-      p {
-        text-align: center;
+      // banner
+      .banner {
+        display: none;
       }
 
-      h1 {
-        .mixin-fonts (@white, @font-firaCode, 700, @headline-4);
-      }
+      // info
+      .info {
+        .mixin-display-flex(column, wrap, initial, initial, 16px, 0);
 
-      p {
-        .mixin-fonts (@white-grayish, @font-roboto, 500, @headline-6);
-        line-height: 1.6em;
+        h1,
+        p {
+          text-align: center;
+        }
+
+        h1 {
+          .mixin-fonts (@white, @font-firaCode, 700, @headline-4);
+        }
+
+        p {
+          .mixin-fonts (@white-grayish, @font-roboto, 500, @headline-6);
+          line-height: 1.6em;
+          padding: 0 0.5em;
+        }
       }
     }
   }
@@ -188,15 +198,13 @@
     }
 
     pre {
-      max-width: 280px;
+      display: block;
+      width: 290px;
       margin: 0 auto @gapRow auto;
-
-      code {
-        overflow-x: scroll;
-      }
+      overflow-x: scroll;
     }
 
-    .image {
+    p.image {
       overflow: hidden;
       width: 80%;
       height: auto;
@@ -208,7 +216,7 @@
     }
 
     p {
-      .mixin-fonts(@black-grayish, @font-roboto, 400, @body-2);
+      .mixin-fonts(@black-grayish, @font-roboto, 400, @body-1);
       line-height: 1.6rem;
       margin-bottom: @gapRow;
 
@@ -230,6 +238,67 @@
         strong:nth-child(1) {
           color: @color-primary;
         }
+      }
+    }
+  }
+}
+
+// Tablets
+@media @tablet {
+  .main {
+    // Intro
+    pre {
+      min-width: calc(100% - 32px);
+    }
+  }
+}
+
+// Laptops
+@media @laptop {
+  .main {
+    // Home
+    .home {
+      &__bg {
+        height: @hBannerDesktop;
+      }
+
+      &__content {
+        top: 0;
+        bottom: unset;
+        column-gap: 48px;
+        align-items: center;
+        // info
+        .info {
+          flex: 50%;
+          max-width: 50%;
+          padding: 0 0 0 24px;
+
+          h1 {
+            font-size: @headline-3;
+          }
+        }
+        // banner
+        .banner {
+          flex: 50%;
+          max-width: 50%;
+          display: block;
+
+          img {
+            .mixin-coverImage();
+          }
+        }
+      }
+    }
+  }
+}
+
+// desktops
+@media @desktop {
+  .main {
+    // Home
+    .home {
+      &__bg {
+        height: @hBannerDesktop + 140px;
       }
     }
   }
