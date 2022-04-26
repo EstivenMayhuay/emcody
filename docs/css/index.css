@@ -29,6 +29,7 @@ body {
   display: block;
   max-width: 100%;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 /* header */
 .header {
@@ -48,6 +49,12 @@ body {
   font-family: "Fira Code", monospace;
   font-weight: 700;
   font-size: 17px;
+}
+@media only screen and (min-width: 900px) {
+  .header {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
 }
 .contentMenu {
   display: flex;
@@ -107,7 +114,7 @@ body {
   .contentMenu {
     position: absolute;
     top: 18px;
-    right: 24px;
+    right: 32px;
     width: auto;
     height: auto;
   }
@@ -234,6 +241,8 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 17px;
+  width: 90%;
+  margin: 0 auto;
   line-height: 1.6em;
   padding: 0 0.5em;
 }
@@ -287,7 +296,6 @@ body {
   font-family: "Fira Code", monospace;
   font-weight: 600;
   font-size: 21px;
-  margin-bottom: 24px;
 }
 .main .ourProjects #projects {
   display: flex;
@@ -296,16 +304,17 @@ body {
   justify-content: none;
   row-gap: 24px;
   column-gap: 0;
+  padding: 24px;
 }
 .main .ourProjects #projects .cardProject {
-  width: 300px;
+  width: 280px;
   display: flex;
   flex-flow: column wrap;
   align-items: center;
   justify-content: flex-start;
   row-gap: 24px;
   column-gap: 0;
-  padding: 1em;
+  padding: 16px;
   background: #eeeeee;
   border-radius: 10px;
 }
@@ -313,7 +322,7 @@ body {
   color: #404040;
   font-family: "Fira Code", monospace;
   font-weight: 700;
-  font-size: 17px;
+  font-size: 14px;
   text-align: center;
 }
 .main .ourProjects #projects .cardProject p {
@@ -342,8 +351,7 @@ body {
   font-size: 14px;
 }
 .main .colaborators {
-  padding: 24px 0;
-  margin-bottom: 48px;
+  margin-bottom: 96px;
 }
 .main .colaborators__title {
   text-align: center;
@@ -466,16 +474,22 @@ body {
   color: #88139b;
 }
 @media only screen and (min-width: 500px) {
+  .main .home__content .info p {
+    width: 80%;
+  }
   .main pre {
     min-width: calc(100% - 32px);
   }
 }
 @media only screen and (min-width: 900px) {
+  .main {
+    row-gap: 64px;
+  }
   .main .home__bg {
-    height: 520px;
+    height: 530px;
   }
   .main .home__content {
-    top: 0;
+    top: 16px;
     bottom: unset;
     column-gap: 48px;
     align-items: center;
@@ -499,10 +513,59 @@ body {
     height: 100%;
     object-fit: cover;
   }
+  .main .whatYouFind__title {
+    font-size: 30px;
+  }
+  .main .whatYouFind__contentCards {
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    column-gap: 24px;
+    padding: 48px 32px;
+  }
+  .main .whatYouFind__contentCards .card {
+    max-width: 240px;
+  }
+  .main .ourProjects__title {
+    font-size: 30px;
+  }
+  .main .ourProjects #projects {
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: center;
+    row-gap: 48px;
+    column-gap: 32px;
+    padding: 48px 32px;
+    margin: 0 auto;
+  }
+  .main .ourProjects #projects .cardProject {
+    flex: 100% / 3 - 64px;
+    min-width: 100% / 3 - 64px;
+  }
+  .main .colaborators__title {
+    font-size: 30px;
+    margin: 0 0 48px 0;
+  }
 }
 @media only screen and (min-width: 1200px) {
   .main .home__bg {
-    height: 660px;
+    height: 700px;
+  }
+  .main .home__content {
+    width: 80%;
+    margin: auto;
+    left: 0;
+    right: 0;
+    align-items: center;
+    justify-content: center;
+  }
+  .main .home__content .banner {
+    max-width: 695px;
+    height: 436px;
+    overflow: hidden;
+  }
+  .main .home__content .banner img {
+    object-fit: contain;
   }
 }
 /* Footer */
@@ -624,5 +687,9 @@ body {
 @media only screen and (min-width: 900px) {
   #buttonMenu {
     display: none;
+  }
+  #buttonUp {
+    right: 32px;
+    bottom: 64px;
   }
 }

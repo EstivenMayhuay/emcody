@@ -46,6 +46,8 @@
 
         p {
           .mixin-fonts (@white-grayish, @font-roboto, 500, @headline-6);
+          width: 90%;
+          margin: 0 auto;
           line-height: 1.6em;
           padding: 0 0.5em;
         }
@@ -93,21 +95,21 @@
     &__title {
       text-align: center;
       .mixin-fonts(@black-grayish, @font-firaCode, 600, @headline-5);
-      margin-bottom: 24px;
     }
 
     #projects {
       .mixin-display-flex(column, wrap, center, none, 24px, 0);
+      padding: 24px;
 
       .cardProject {
         width: @wCardProjects;
         .mixin-display-flex(column, wrap, center, flex-start, 24px, 0);
-        padding: 1em;
+        padding: 16px;
         background: @white-grayish;
         border-radius: 10px;
 
         h4 {
-          .mixin-fonts(@black-grayish, @font-firaCode, 700, @headline-6);
+          .mixin-fonts(@black-grayish, @font-firaCode, 700, @body-2);
           text-align: center;
         }
 
@@ -134,8 +136,7 @@
   // Section Colaborators
   .colaborators {
     // outline: 2px solid blue;
-    padding: 24px 0;
-    margin-bottom: 48px;
+    margin-bottom: 96px;
 
     &__title {
       text-align: center;
@@ -243,9 +244,20 @@
   }
 }
 
-// Tablets
+// Tablet
 @media @tablet {
   .main {
+    // Section Home
+    .home {
+      &__content {
+        .info {
+          p {
+            width: 80%;
+          }
+        }
+      }
+    }
+
     // Intro
     pre {
       min-width: calc(100% - 32px);
@@ -253,17 +265,19 @@
   }
 }
 
-// Laptops
+// Laptop
 @media @laptop {
   .main {
-    // Home
+    row-gap: 64px;
+
+    // Section Home
     .home {
       &__bg {
         height: @hBannerDesktop;
       }
 
       &__content {
-        top: 0;
+        top: 16px;
         bottom: unset;
         column-gap: 48px;
         align-items: center;
@@ -289,16 +303,83 @@
         }
       }
     }
+
+    // Section What You Find
+    .whatYouFind {
+      &__title {
+        font-size: @headline-4;
+      }
+
+      &__contentCards {
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
+        column-gap: 24px;
+        padding: 48px 32px;
+
+        .card {
+          max-width: 240px;
+        }
+      }
+    }
+
+    // Section Our Projects
+    .ourProjects {
+      &__title {
+        font-size: @headline-4;
+      }
+
+      #projects {
+        flex-flow: row wrap;
+        align-items: flex-start;
+        justify-content: center;
+        row-gap: 48px;
+        column-gap: 32px;
+        padding: 48px 32px;
+        margin: 0 auto;
+
+        .cardProject {
+          flex: 100% / 3 - 64px;
+          min-width: 100% / 3 - 64px;
+        }
+      }
+    }
+
+    // Section Colaborators
+    .colaborators {
+      &__title {
+        font-size: @headline-4;
+        margin: 0 0 48px 0;
+      }
+    }
   }
 }
 
-// desktops
+// Desktop
 @media @desktop {
   .main {
     // Home
     .home {
       &__bg {
-        height: @hBannerDesktop + 140px;
+        height: @hBannerDesktop + 170px;
+      }
+
+      &__content {
+        width: 80%;
+        margin: auto;
+        left: 0;
+        right: 0;
+        align-items: center;
+        justify-content: center;
+        .banner {
+          max-width: 695px;
+          height: 436px;
+          overflow: hidden;
+
+          img {
+            object-fit: contain;
+          }
+        }
       }
     }
   }
