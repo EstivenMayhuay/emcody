@@ -12,9 +12,16 @@
 }
 
 // laptops
-@media @laptop {
+@media @laptop, @desktop {
   .header {
     padding-left: 32px;
     padding-right: 32px;
+  }
+}
+
+// desktop
+@media @desktop {
+  .header {
+    height: @hHeaderMobile + 20px;
   }
 }

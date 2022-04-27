@@ -1,0 +1,26 @@
+// show the deailts
+.whatSeeInThisCourse {
+  display: none;
+}
+
+@media @laptop {
+  // show the deailts
+  .whatSeeInThisCourse {
+    display: block;
+    padding: 48px 16px;
+
+    &__title {
+      .mixin-fonts(@color-primary, @font-firaCode, 600, @headline-6);
+      margin-bottom: 16px;
+    }
+
+    .contentList {
+      display: flex;
+      flex-flow: column;
+      row-gap: 8px;
+      list-style: none;
+      padding: 8px;
+      border-left: 2px solid @color-primary;
+    }
+  }
+}

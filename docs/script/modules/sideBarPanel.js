@@ -11,7 +11,9 @@ const sideBarPanel = () => {
       e.target.matches(`#${panelInfo.id} *`)
     ) {
       sideBarPanel.style.transform = "translate(0, 0)";
-    } else if (!e.target.matches(`#${panelInfo.id}`)) {
+    }
+
+    if (e.target.matches("i.bx-window-open")) {
       sideBarPanel.style.transform = "translate(-100%, 0)";
     }
   });

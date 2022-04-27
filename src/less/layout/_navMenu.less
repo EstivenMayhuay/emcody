@@ -5,7 +5,6 @@
   background: @color-primary;
   overflow: hidden;
   transition: height 0.4s ease;
-  z-index: 98;
 
   .menu {
     .mixin-display-flex(column, wrap, center, center, 1em, 0);
@@ -45,17 +44,30 @@
   }
 }
 
-@media @laptop {
+// laptop
+@media @laptop, @desktop {
   .contentMenu {
     position: absolute;
     top: 18px;
     right: 32px;
     width: auto;
     height: auto;
+    z-index: 98px;
 
     .menu {
       flex-flow: row nowrap;
       column-gap: 1em;
+    }
+  }
+}
+
+// desktop
+@media @desktop {
+  .contentMenu {
+    .menu {
+      &__link {
+        font-size: @headline-4 - 4px;
+      }
     }
   }
 }

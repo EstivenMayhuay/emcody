@@ -36,8 +36,10 @@
     },
   ];
 
-aside.panel#panelInfo
+aside.panel.gridContainer__panel#panelInfo
   nav.panelMenu
+    span.btnClose
+      <i class='bx bx-window-open'></i>
     each item in navHTML5
       details.panelMenu__indice
         summary= item.summary

@@ -20,11 +20,15 @@ Ahora bien, para poder trabajar con esta tecnología necesitaremos las siguiente
 
 Para los **Navegadores** no existe uno en especial. Sin embargo, podemos optar por **Google Chrome y Firefox** esto debido que ambos navegadores tienen muy buenas **Dev Tools (Herramientas de Desarrollo)**.
 
+<a id="dev-tool-chrome"></a>
+
 **Dev Tool Chrome**
 
 <p class="image">
   <img src="../../images/devToolChrome.jpeg" alt="dev tool chrome">
 </p>
+
+<a id="dev-tool-firefox"></a>
 
 **Dev Tool Firefox**
 

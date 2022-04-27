@@ -78,8 +78,24 @@
   }
 }
 
-@media @laptop {
-  #buttonMenu {
+.btnClose {
+  position: absolute;
+  top: 6px;
+  right: 4px;
+  width: @sizebtnclose;
+  height: @sizebtnclose;
+  transform: rotate(-90deg);
+  cursor: pointer;
+
+  i {
+    font-size: @sizebtnclose;
+    color: @black-grayish;
+  }
+}
+
+@media @laptop, @desktop {
+  #buttonMenu,
+  .btnClose {
     display: none;
   }
 

@@ -174,7 +174,7 @@
     }
   }
 
-  // Intro
+  // Section Intro
   [class*="intro-"] {
     @gapRow: 16px;
 
@@ -258,7 +258,7 @@
       }
     }
 
-    // Intro
+    // Section Intro
     pre {
       min-width: calc(100% - 32px);
     }
@@ -266,14 +266,14 @@
 }
 
 // Laptop
-@media @laptop {
+@media @laptop, @desktop {
   .main {
     row-gap: 64px;
 
     // Section Home
     .home {
       &__bg {
-        height: @hBannerDesktop;
+        height: @hBannerDesktop + 140px;
       }
 
       &__content {
@@ -355,30 +355,28 @@
   }
 }
 
-// Desktop
 @media @desktop {
-  .main {
-    // Home
-    .home {
-      &__bg {
-        height: @hBannerDesktop + 170px;
-      }
+  // Section Home
+  .home {
+    &__bg {
+      height: @hBannerDesktop + 400px !important;
+    }
 
-      &__content {
-        width: 80%;
-        margin: auto;
-        left: 0;
-        right: 0;
-        align-items: center;
-        justify-content: center;
-        .banner {
-          max-width: 695px;
-          height: 436px;
-          overflow: hidden;
+    &__content {
+      right: 0;
+      left: 0;
+      margin: auto;
+      max-width: 100%;
+      height: auto;
 
-          img {
-            object-fit: contain;
-          }
+      // Info
+      .info {
+        h1 {
+          font-size: @headline-1 !important;
+        }
+
+        p {
+          font-size: @headline-4 !important;
         }
       }
     }
