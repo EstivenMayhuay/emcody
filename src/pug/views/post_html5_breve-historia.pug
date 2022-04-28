@@ -5,13 +5,19 @@ html(lang="es")
     title= 'Breve Historia HTML5'
   block ownStyle
     link(rel="stylesheet", href="../../../css/index.css")
-  body
+  body.gridContainer
     include ../includes/header.pug
     include ../includes/navMenu.pug
     include ../includes/headSideBar.pug
     include ../includes/sideBarHTML5.pug
 
-    main.main
+    div.whatSeeInThisCourse.gridContainer__details
+      h2.whatSeeInThisCourse__title ¿Qué veremos aquí?
+      ul.contentList
+        li
+          a(href="#breve-historia-html") Versiones HTML
+
+    main.main.gridContainer__main
       section.intro-HTML5
         include:markdown-it(html) ../../../src/markdown/post/html5/breve-historia.md
 

@@ -1,3 +1,5 @@
+<a id="que-es-html5"></a>
+
 # ¿Qué es HTML5?
 
 Entendiendo que HTML es un lenguaje de marcado de información que permite definir y estructurar los datos en nuestros sitios web. Surge la interrogante 😞 ¿Qué es HTML5?, aquí vamos con la respuesta.
@@ -9,6 +11,8 @@ Entendiendo que HTML es un lenguaje de marcado de información que permite defin
 - Soporte a Formularios, SVG, MathML
 
 Como puedes apreciar en la lista, HTML no es un simple lenguaje, tiene muchas funcionalidades que hacen más fácil el trabajo de los desarrolladores web. Vamos a verlo a detalle.
+
+<a id="tag-semanticos"></a>
 
 ## Etiquetas semánticas
 
@@ -35,6 +39,8 @@ Como puedes apreciar en el código HTML, toda está sencillo, entendible y con u
 Probablemente, si estás usando EMCODY en un móvil se vea todo desordenado y esto es debido a que nos estamos haciendo uso del **CSS para lograr el Responsive Web Design** tema del cual hablaremos en el curso de CSS.
 
 Ahora bien, si visualizas el código HTML y lo comparas con el anterior código hecho con tablas. ¿Cuál crees tú que es mejor? ¿Cuál es más entendible y fácil de leer? ¿Con cuál código te quedas?
+
+<a id="api-integradas"></a>
 
 ## API's Integradas
 
@@ -86,6 +92,8 @@ ctx.fill();
 
 Como ya habrás notado para usar la API Canvas estamos haciendo uso de 3 lenguajes **(HTML, CSS y JavaScript)**, esto quiere decir que a mediada que quieras usar las API's integradas del navegador será necesario que conozcas más de los otros lenguajes de la web.
 
+<a id="soporte-formularios"></a>
+
 ## Soporte Formularios
 
 Gracias al poder del Dios de la programacion y a los miles de progamadores que trabajan en las neuvas emjoras del neugaje tenemos por fin las **validadciones por defecto de los formularios sin necsidad de JavaScript** todo con un solo atributo. Claro esta que para validaciones basicas, ya que para validaciones mas complejas se necesitara a nuestro buen amigo 👉 JavaScript. Veamos un ejemplo
@@ -93,6 +101,8 @@ Gracias al poder del Dios de la programacion y a los miles de progamadores que t
 **[Link a Codepen.io Soporte formularios HTML](https://codepen.io/estivenMayhuay/pen/LYeowXW)**
 
 Trata de ingresar datos incorrectos como en el campo celular ingresa letras y en el campo email ingresa un nombre y luego presiona enviar, podrás ver que gracias a HTML5 y sus mejoras te avisara en el caso de email que debe tener un **@** y en el campo celular no te dejara escribir letras.
+
+<a id="svg-html5"></a>
 
 ## SVG
 
@@ -112,6 +122,8 @@ El código de 👇 generará un círculo que será escalable a pesar de tener 50
   />
 </svg>
 ```
+
+<a id="mathml-html5"></a>
 
 ## MathML
 

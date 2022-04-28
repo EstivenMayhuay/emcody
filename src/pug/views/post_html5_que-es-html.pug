@@ -5,13 +5,23 @@ html(lang="es")
     title= '¿Qué es HTML?'
   block ownStyle
     link(rel="stylesheet", href="../../../css/index.css")
-  body
+  body.gridContainer
     include ../includes/header.pug
     include ../includes/navMenu.pug
     include ../includes/headSideBar.pug
     include ../includes/sideBarHTML5.pug
 
-    main.main
+    div.whatSeeInThisCourse.gridContainer__details
+      h2.whatSeeInThisCourse__title ¿Qué veremos aquí?
+      ul.contentList
+        li
+          a(href="#que-es-html") ¿Qué es HTML?
+        li
+          a(href="#siglas-html") Significado de HTML
+        li
+          a(href="#asociacion-html") Asociación con HTML
+
+    main.main.gridContainer__main
       section.intro-HTML5
         include:markdown-it(html) ../../../src/markdown/post/html5/que-es-html.md
 

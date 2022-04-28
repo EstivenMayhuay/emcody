@@ -1,3 +1,5 @@
+<a id="estructura-html-basica"></a>
+
 # Estructura Básica de HTML
 
 Ahora que ya definimos ¿Qué es HTML y HTML5? Vamos a definir Cuál es la estructura básica de un documento HTML.
@@ -36,17 +38,25 @@ Esta es una etiqueta de imagen **src** es la ruta donde se encuentra la imagen y
 
 Habiendo definido los tags en HTML, procederemos a hablar de las etiquetas fundamentales en la estructura Básica de HTML.
 
+<a id="tag-doctype"></a>
+
 ## DOCTYPE html
 
 Esta etiqueta permite decirle al navegador que trabajaremos con la última versión de HTML5 y además al momento de ser interpretado por el navegador sabrá que se trata del lenguaje HTML y no de otro tipo de lenguaje.
+
+<a id="tag-html"></a>
 
 ## html
 
 La etiqueta **html** es la raíz de nuestro documento HTML en sí, dentro de la etiqueta html se engloba las otras dos etiquetas **head y body**, además de ello notaras que las etiquetas tienen propiedades. En el caso de html tiene **el atributo language con el valor de español => lang="es"**.
 
+<a id="tag-head"></a>
+
 ## head
 
 La etiqueta head hace referencia a todos aquellos datos que son necesarios para el navegador, como los metacomandos que permitan usar **caracteres especiales, responsive web design, definir un título, enlazar documentos, CSS y JavaScript, entre otros**. En pocas palabras en la etiqueta head se engloba todo lo que el **usuario no podra ver, pero el navegador necesita**.
+
+<a id="tag-body"></a>
 
 ## body
 

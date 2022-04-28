@@ -6,15 +6,20 @@
 @media @laptop {
   // show the deailts
   .whatSeeInThisCourse {
+    position: relative;
     display: block;
     padding: 48px 16px;
 
     &__title {
+      position: sticky;
+      top: 20px;
       .mixin-fonts(@color-primary, @font-firaCode, 600, @headline-6);
       margin-bottom: 16px;
     }
 
     .contentList {
+      position: sticky;
+      top: 55px;
       display: flex;
       flex-flow: column;
       row-gap: 8px;

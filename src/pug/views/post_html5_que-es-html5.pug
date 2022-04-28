@@ -5,13 +5,29 @@ html(lang="es")
     title= '¿Qué es HTML5?'
   block ownStyle
     link(rel="stylesheet", href="../../../css/index.css")
-  body
+  body.gridContainer
     include ../includes/header.pug
     include ../includes/navMenu.pug
     include ../includes/headSideBar.pug
     include ../includes/sideBarHTML5.pug
 
-    main.main
+    div.whatSeeInThisCourse.gridContainer__details
+      h2.whatSeeInThisCourse__title ¿Qué veremos aquí?
+      ul.contentList
+        li
+          a(href="#que-es-html5") ¿Qué es HTML5?
+        li
+          a(href="#tag-semanticos") Etiquetas Semánticas
+        li
+          a(href="#api-integradas") API's Integradas
+        li
+          a(href="#soporte-formularios") Soporte de Formularios
+        li
+          a(href="#svg-html5")  SVG
+        li
+          a(href="#mathml-html5") MathML
+
+    main.main.gridContainer__main
       section.intro-HTML5
         include:markdown-it(html) ../../../src/markdown/post/html5/que-es-html5.md
 
