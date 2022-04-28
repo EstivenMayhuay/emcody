@@ -23,7 +23,7 @@ En conclusión podemos decir que **HTML es un lenguaje de marcado de informació
 <a id="asociacion-html"></a>
 
 <p class="image">
-  <img src="../../../../docs/images/esqueleto-humano-html.png" alt="esqueleto humano html">
+  <img src="https://estivenmayhuay.github.io/emcody/images/esqueleto-humano-html.png" alt="esqueleto humano html">
 </p>
 
 Podemos hacer una asociación para entender la importancia de HTML en el desarrollo web con el cuerpo humano. Sabemos que el cuerpo humano tiene un esqueleto, la cual es al base para la sostenibilidad de los diferentes órganos, entonces **podemos decir que HTML seria como el esqueleto del cuerpo humano**, definimos donde va la cabeza, donde van los brazos y piernas, etc., pero solo es estructura, no hay estilos (Tejidos, Color, Cabello) ni funcionalidades (Bailar, Saltar, Correr).
