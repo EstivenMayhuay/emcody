@@ -45,7 +45,7 @@
 }
 
 // laptop
-@media @laptop, @desktop {
+@media @laptop {
   .contentMenu {
     position: absolute;
     top: 18px;
@@ -61,12 +61,22 @@
   }
 }
 
-// desktop
-@media @desktop {
+// desktop small
+@media @desktop-s, @desktop-m, @desktop-b {
   .contentMenu {
+    position: absolute;
+    top: 15px;
+    right: 32px;
+    width: auto;
+    height: auto;
+    z-index: 98px;
+
     .menu {
+      flex-flow: row nowrap;
+      column-gap: 1em;
+
       &__link {
-        font-size: @headline-4 - 4px;
+        font-size: @headline-6;
       }
     }
   }

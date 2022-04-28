@@ -202,7 +202,6 @@
       display: block;
       width: 290px;
       margin: 0 auto @gapRow auto;
-      overflow-x: scroll;
     }
 
     p.image {
@@ -244,7 +243,7 @@
   }
 }
 
-// Tablet
+// tablet
 @media @tablet {
   .main {
     // Section Home
@@ -265,7 +264,7 @@
   }
 }
 
-// Laptop
+// laptop
 @media @laptop {
   .main {
     row-gap: 64px;
@@ -281,7 +280,8 @@
         bottom: unset;
         column-gap: 48px;
         align-items: center;
-        // info
+
+        // Info
         .info {
           flex: 50%;
           max-width: 50%;
@@ -291,7 +291,8 @@
             font-size: @headline-3;
           }
         }
-        // banner
+
+        // Banner
         .banner {
           flex: 50%;
           max-width: 50%;
@@ -356,34 +357,231 @@
     // Section Intro
     [class*="intro-"] {
       padding: 24px;
+
+      pre {
+        width: 70%;
+      }
     }
   }
 }
 
-@media @desktop {
-  // Section Home
-  .home {
-    &__bg {
-      height: @hBannerDesktop + 400px !important;
-    }
+// desktop small
+@media @desktop-s, @desktop-m, @desktop-b {
+  .main {
+    row-gap: 64px;
 
-    &__content {
-      right: 0;
-      left: 0;
-      margin: auto;
-      max-width: 100%;
-      height: auto;
+    // Section Home
+    .home {
+      &__bg {
+        height: @hBannerDesktop + 210px;
+      }
 
-      // Info
-      .info {
-        h1 {
-          font-size: @headline-1 !important;
+      &__content {
+        // Info
+        .info {
+          flex: 50%;
+          height: 450px;
+          .mixin-display-flex(column, wrap, center, center, 24px, 0);
+
+          h1 {
+            font-size: @headline-3;
+            padding: 0 24px;
+          }
+
+          p {
+            font-size: @headline-6;
+            padding: 0 24px;
+          }
         }
+        // Banner
+        .banner {
+          flex: 50%;
+          display: block;
+          width: 645px;
+          height: 450px;
 
-        p {
-          font-size: @headline-4 !important;
+          img {
+            .mixin-coverImage();
+          }
         }
       }
+    }
+
+    // Section What You Find
+    .whatYouFind {
+      width: 80%;
+      margin: 0 auto;
+
+      &__title {
+        font-size: @headline-4;
+      }
+
+      &__contentCards {
+        flex-flow: row wrap;
+        align-items: flex-start;
+        column-gap: 32px;
+        padding: 48px 0;
+
+        .card {
+          img {
+            width: 48px;
+            height: 48px;
+          }
+
+          &__title {
+            font-size: @headline-5;
+          }
+
+          &__descp {
+            font-size: @headline-6;
+          }
+        }
+      }
+    }
+
+    // Section Our Projects
+    .ourProjects {
+      width: 90%;
+      margin: 0 auto;
+
+      &__title {
+        font-size: @headline-4;
+      }
+
+      #projects {
+        flex-flow: row wrap;
+        gap: 32px;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 48px 0;
+
+        .cardProject {
+          width: @wCardProjects + 100px;
+
+          h4 {
+            font-size: @headline-6 + 4px;
+          }
+
+          p {
+            font-size: @headline-6;
+          }
+        }
+      }
+    }
+
+    // Section Colaborators
+    .colaborators {
+      &__title {
+        font-size: @headline-4;
+        margin-bottom: 48px;
+      }
+    }
+
+    // Section Intro
+    [class*="intro-"] {
+      padding: 24px;
+
+      pre {
+        width: 70%;
+      }
+    }
+  }
+}
+
+// desktop medium
+@media @desktop-m {
+  .main {
+    // Section Home
+    .home {
+      &__bg {
+        height: @hBannerDesktop + 260px;
+      }
+
+      &__content {
+        // Intro
+        .info {
+          h1 {
+            font-size: @headline-2;
+          }
+
+          p {
+            font-size: @headline-5;
+          }
+
+          h1,
+          p {
+            padding: 0 64px;
+          }
+        }
+
+        // Banner
+        .banner {
+          width: 645px;
+          height: 450px;
+
+          img {
+            object-fit: contain;
+          }
+        }
+      }
+    }
+
+    // Section Intro
+    [class*="intro-"] {
+      h1 {
+        font-size: @headline-4;
+      }
+
+      p,
+      ul > li {
+        font-size: @headline-6;
+      }
+    }
+  }
+}
+
+// desktop big
+@media @desktop-b {
+  .main {
+    // Section Home
+    .home {
+      &__bg {
+        height: @hBannerDesktop + 360px;
+      }
+
+      &__content {
+        // Intro
+        .info {
+          h1 {
+            font-size: @headline-1;
+          }
+
+          p {
+            font-size: @headline-4;
+          }
+
+          h1,
+          p {
+            padding: 0 64px;
+          }
+        }
+
+        // Banner
+        .banner {
+          width: 750px;
+          height: 550px;
+
+          img {
+            object-fit: contain;
+          }
+        }
+      }
+    }
+
+    // Section What You Find,  Our Projects
+    .whatYouFind,
+    .ourProjects {
+      width: 70%;
     }
   }
 }

@@ -32,13 +32,14 @@
   }
 }
 
+// laptop
 @media @laptop {
   .panel {
     position: relative;
     top: unset;
     left: unset;
-    height: 100% - 35px;
-    transform: translate(0, 0);
+    height: auto;
+    transform: none;
     z-index: 95;
 
     .panelMenu {
@@ -46,5 +47,17 @@
         cursor: pointer;
       }
     }
+  }
+}
+
+// desktop small & desktop medium & desktop big
+@media @desktop-s, @desktop-m, @desktop-b {
+  .panel {
+    position: relative;
+    top: unset;
+    left: unset;
+    height: auto;
+    transform: none;
+    z-index: 95;
   }
 }

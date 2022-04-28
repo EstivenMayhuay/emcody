@@ -19,11 +19,12 @@ body {
   overflow-x: hidden;
 }
 
-@media @laptop {
+// laptop & desktop small & desktop medium
+@media @laptop, @desktop-s, @desktop-m, @desktop-b {
   .gridContainer {
     display: grid;
     grid-template-columns: repeat(11, 1fr);
-    grid-template-rows: repeat(3, auto);
+    grid-template-rows: 55px auto 35px;
 
     &__header {
       grid-column: 1 / -1;
@@ -33,16 +34,15 @@ body {
     &__panel {
       grid-column: 1 / 2;
       grid-row: 2;
-      min-height: 100%;
     }
 
     &__main {
-      grid-column: 2 / 9;
+      grid-column: 2 / 10;
       grid-row: 2;
     }
 
     &__details {
-      grid-column: 9 / -1;
+      grid-column: 10 / -1;
       grid-row: 2;
     }
 

@@ -6,6 +6,15 @@
   height: @hHeaderMobile;
   background: @color-primary;
 
+  &__icon {
+    width: 32px;
+    height: 32px;
+
+    img {
+      .mixin-coverImage();
+    }
+  }
+
   &__title {
     .mixin-fonts(@white, @font-firaCode, 700, @headline-6);
   }
@@ -19,9 +28,12 @@
   }
 }
 
-// desktop
-@media @desktop {
+// desktop small & medium & big
+@media @desktop-s, @desktop-m, @desktop-b {
   .header {
-    height: @hHeaderMobile + 20px;
+    padding: 0 32px;
+    &__title {
+      font-size: @headline-6;
+    }
   }
 }
