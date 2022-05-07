@@ -222,12 +222,14 @@ body {
   row-gap: 16px;
   column-gap: 0;
 }
+.panel .panelMenu__indice {
+  outline: 2px solid blue;
+}
 .panel .panelMenu__indice h6 {
   color: #404040;
   font-family: "Fira Code", monospace;
   font-weight: 600;
   font-size: 14px;
-  outline: 2px solid blue;
 }
 .panel .panelMenu__indice ul {
   display: flex;
