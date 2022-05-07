@@ -7,7 +7,7 @@
     "doc": "docs"
   },
   "scripts": {
-    "test": ""
+    "dev": "gulp watch"
   },
   "repository": {
     "type": "git",
