@@ -253,6 +253,10 @@ body {
     transform: none;
     z-index: 95;
   }
+  .panel .panelMenu {
+    position: fixed;
+    top: 71px;
+  }
   .panel .panelMenu__indice {
     cursor: pointer;
   }
