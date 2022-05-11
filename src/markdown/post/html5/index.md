@@ -2,9 +2,9 @@
 
 # **HTML5**
 
-Bienvenidos y Bienvenidas a esta sección en donde hablaremos sobre una de las **tecnologías fundamentales para el desarrollo web.** HTML, es un lenguaje que debemos aprender si queremos estructurar nuestras websites de una mejor forma.
+Bienvenidos y Bienvenidas a esta sección en donde hablaremos sobre una de las tecnologías fundamentales para el desarrollo web. **Nos referimos a HTML**, el cual es un lenguaje que debemos aprender si queremos adentrarnos en el mundo web.
 
-Por lo cual, veremos los siguientes temas:
+Por lo cual, en esta ocasión tenemos una serie de temas que abordaremos para entender los fundamentos de HTML, estos son:
 
 - HTML Básico
 - Estructura HTML
@@ -14,13 +14,15 @@ Por lo cual, veremos los siguientes temas:
 - Canvas
 - API's y mucho más
 
-Ahora bien, para poder trabajar con esta tecnología necesitaremos las siguientes herramientas:
+Ahora bien, surge la interrogante **¿Qué herramientas necesito para trabajar con HTML?** Aquí te ayudaremos.
 
 - Navegador (Chrome, Firefox, Opera, Safari)
-- Editor de Codigo (Atom, Visual Studio Code, Sublime Text)
-- Conexion a Internet
+- Editor de Código (Atom, Visual Studio Code, Sublime Text)
+- Conexión a Internet
 
-Para los **Navegadores** no existe uno en especial. Sin embargo, podemos optar por **Google Chrome y Firefox** esto debido que ambos navegadores tienen muy buenas **Dev Tools (Herramientas de Desarrollo)**.
+Lo sé, es más que obvio, lo del navegador 😀. Sin embargo, aquí tratamos de que todos aprendan, tengan un conocimiento avanzando o recién estén comenzando.
+
+En el caso de los **Navegadores** no existe uno en especial. Sin embargo, podemos optar por **Google Chrome y Firefox** esto debido que ambos navegadores tienen muy buenas **Dev Tools (Herramientas de Desarrollo)**.
 
 <a id="dev-tool-chrome"></a>
 
@@ -44,4 +46,10 @@ En el caso de **los editores de código**, tenemos la total libertad de usar el 
 - [Download Sublime Text](https://www.sublimetext.com/3)
 - [Download Atom](https://atom.io/)
 
-Y en el internet 😆 no sé que decir, pero creo que todos tenemos internet. Así que, sin más preambulos, dirígete al panel de navegación para empezar a aprender.
+Pero, eso no todo, si no cuentas con el suficiente poder de cómputo puedes operar por utilizar herramientas de codificación en la nube.
+
+- [JsFiddle](https://jsfiddle.net/)
+- [Codepen](https://codepen.io/pen/)
+- [VS Code en la Nube](https://vscode.dev/)
+
+Y en el internet 😆 no sé que decir, pero creo que todos tenemos internet. Así que, sin más preámbulos, dirígete al panel de navegación para empezar a aprender.
