@@ -80,20 +80,21 @@
     <main class="main gridContainer__main">
       <section class="intro-HTML5"><p><a id="que-es-html5"></a></p>
 <h1>¿Qué es HTML5?</h1>
-<p>Entendiendo que HTML es un lenguaje de marcado de información que permite definir y estructurar los datos en nuestros sitios web. Surge la interrogante 😞 ¿Qué es HTML5?, aquí vamos con la respuesta.</p>
-<p><strong>HTML5, es una nueva versión con un conjunto de mejoras que comprenden nuevas funcionalidades al lenguaje HTML</strong>. Pero, ¿Qué tipo de mejoras?</p>
+<p>Nos encontramos en un artículo más sobre este grandioso lenguaje de la web, así que ahí vamos. Entendiendo que HTML es un lenguaje de marcado de información que permite definir y estructurar los datos en nuestros sitios web. Surge la interrogante 😞 <strong>¿Qué es HTML5?</strong>, aquí vamos con la respuesta.</p>
+<p><strong>HTML5, es una nueva versión con un conjunto de mejoras que comprenden nuevas características y funcionalidades al lenguaje HTML</strong>. Pero, ¿Qué tipo de mejoras? Aquí los vamos a responder.</p>
+<p>A continuación te detallaré cada una de las mejore con mayor auge y peso en el desarrollo web y que usaremos en nuestro día a día como programadores.</p>
 <ul>
-<li>Etiquetas Semánticas (header, section, main, article, aside, nav, footer)</li>
+<li>Etiquetas Semánticas (header, section, main, article, aside, nav, footer).</li>
 <li>API integradas en el navegador (Canvas, IndexedDB, LocalStorage, Audio, Video, Drag &amp; Drop y mucho más)</li>
 <li>Soporte a Formularios, SVG, MathML</li>
 </ul>
-<p>Como puedes apreciar en la lista, HTML no es un simple lenguaje, tiene muchas funcionalidades que hacen más fácil el trabajo de los desarrolladores web. Vamos a verlo a detalle.</p>
+<p>Como puedes apreciar en la lista, HTML no es un simple lenguaje, y va más allá de tan solo escribir etiquetas y colocar el contenido, tiene muchas funcionalidades que hacen más fácil el trabajo de los desarrolladores web. Vamos a verlo a detalle.</p>
 <p><a id="tag-semanticos"></a></p>
 <h2>Etiquetas semánticas</h2>
-<p>Antes de HTML5, si querías dividir tu sitio web en diferentes secciones tenias que hacer uso de los <strong>famosos div y tables</strong>, era muy engorroso, difícil de entender y mantener y para una prueba basta que veas el código de abajo 👇</p>
-<p><strong><a href="https://codepen.io/estivenMayhuay/pen/rNpgbbx">Link a Codepen.io estructura con tablas</a></strong></p>
+<p>Antes de HTML5, si querías dividir tu sitio web en diferentes secciones tenías que hacer uso de los <strong>famosos div y tables</strong>, era muy engorroso, difícil de entender y mantener y para ello basta con una prueba, mira el código de abajo. 👇</p>
+<p>🔗 <a href="https://codepen.io/estivenMayhuay/pen/rNpgbbx" target="_blank"><strong>Link a Codepen.io estructura con tablas</strong></a></p>
 <p>Estamos usando <strong>Codepen.io</strong>, selecciona en la parte donde dice <strong>HTML</strong> verás el código en donde encontraras un conjunto de elementos <strong>(table, tr, td, th)</strong></p>
-<p>Está todo muy enredado 😄, gracias al <strong>Dios de la programación</strong> llegaron las etiquetas semánticas, es decir, son aquellos tags creados con un significado, con un propósito especifico.</p>
+<p>Está todo muy enredada verdad 😄, gracias al <strong>Dios de la programación</strong> llegaron las etiquetas semánticas, es decir, son aquellos tags creados con un significado, con un propósito específico.</p>
 <p>Tenemos a <strong>header</strong> que nos permite definir la cabecera de nuestro sitio web, <strong>nav</strong> para definir los elementos que conformaran nuestro menú de navegación, <strong>section</strong> en el cual se define la información relevante de nuestro sitio y <strong>footer</strong> representa el pie de página, el final del sitio web. Pero vayamos al código para que lo entiendas mejor ahora <strong>ya no usaremos tablas, sino semantic tags</strong></p>
 <p>Como puedes apreciar en el código HTML, toda está sencillo, entendible y con un significado cierto. Por ejemplo:</p>
 <ul>
@@ -103,18 +104,15 @@
 <li><strong>La etiqueta li</strong> son los list items</li>
 <li><strong>La etiqueta a</strong> son los enlaces (links)</li>
 </ul>
-<p><strong><a href="https://codepen.io/estivenMayhuay/pen/dyJEEwQ">Link a Codepen.io Estructura con etiquetas semánticas</a></strong></p>
-<p>Probablemente, si estás usando EMCODY en un móvil se vea todo desordenado y esto es debido a que nos estamos haciendo uso del <strong>CSS para lograr el Responsive Web Design</strong> tema del cual hablaremos en el curso de CSS.</p>
+<p>🔗 <a href="https://codepen.io/estivenMayhuay/pen/dyJEEwQ" target="_blank"><strong>Link a Codepen.io Estructura con etiquetas semánticas</strong></a></p>
+<p>Probablemente, si estás usando <strong>EMCODY</strong> en un móvil se vea todo desordenado y esto es debido a que no estamos haciendo uso del <strong>CSS para lograr el Responsive Web Design</strong> tema del cual hablaremos luego.</p>
 <p>Ahora bien, si visualizas el código HTML y lo comparas con el anterior código hecho con tablas. ¿Cuál crees tú que es mejor? ¿Cuál es más entendible y fácil de leer? ¿Con cuál código te quedas?</p>
 <p><a id="api-integradas"></a></p>
 <h2>API's Integradas</h2>
-<p>Primero vamos a definir que es una API. Bueno, una <strong>API (Application Programming Interface)</strong> en términos sencillos, son un conjunto de métodos y funcionalidades para manejar los datos que son otorgados por una aplicación para conectarse a otras aplicaciones. Por ejemplo, Tenemos la <strong>API de Spotify</strong>, la cual nos permite consumir las canciones que tienen y podemos usar dichos datos en nuestra propia aplicación. Es decir, una es la forma en que nuestras aplicaciones pueden consumir datos de terceros.</p>
-<p>Ahora bien, Spotify es una API externa, en el caso de las API's integradas en el navegador el concepto es el mismo con la diferencia que está a nuestra disposición y no tenemos que pagar por una membresía para tener acceso a sus funcionalidades.</p>
-<p><strong>API LocalStorage</strong> permite la persistencia de los datos almacenándolo con ciertas limitaciones. Por ejemplo: podemos guardar el valor de un modo oscuro, para mantener la persistencia de los datos, así al recargar la página se mantendrá el modo oscuro.</p>
-<pre><code class="language-javascript">/*
-guardando el modo oscuro así al recargar
-la página se mantendrá el modo oscuro
-*/
+<p>Primero vamos a definir que es una API. Bueno, una <strong>API (Application Programming Interface)</strong> en términos sencillos, <strong>son un conjunto de métodos y funcionalidades para manejar los datos que son otorgados por una aplicación para conectarse a otras aplicaciones</strong>. Por ejemplo, Tenemos la <strong>API de Spotify</strong>, la cual nos permite consumir las canciones que tienen y podemos usar dichos datos en nuestra propia aplicación. <strong>Es decir, es la forma en que nuestras aplicaciones pueden consumir datos de terceros.</strong></p>
+<p>Ahora bien, Spotify es una <strong>API externa</strong>, en el caso de las <strong>API's integradas</strong> en el navegador el concepto es el mismo con la diferencia que está a nuestra disposición y no tenemos que pagar por una membresía para tener acceso a sus dichos datos.</p>
+<p>Un gran ejemplo es la <strong>API LocalStorage</strong> que permite la persistencia de los datos almacenándolo con ciertas limitaciones. Por ejemplo: podemos guardar el valor de un modo oscuro, para mantener la persistencia de los datos, y así al recargar la página se mantendrá el modo oscuro.</p>
+<pre><code class="language-javascript">// guardando el modo oscuro así al recargar la página se mantendrá
 localStorage.setItem(&quot;theme&quot;, &quot;dark-mode&quot;);
 
 // trayendo el valor del theme
@@ -142,12 +140,12 @@ ctx.fill();
 <p>Como ya habrás notado para usar la API Canvas estamos haciendo uso de 3 lenguajes <strong>(HTML, CSS y JavaScript)</strong>, esto quiere decir que a mediada que quieras usar las API's integradas del navegador será necesario que conozcas más de los otros lenguajes de la web.</p>
 <p><a id="soporte-formularios"></a></p>
 <h2>Soporte Formularios</h2>
-<p>Gracias al poder del Dios de la programacion y a los miles de progamadores que trabajan en las neuvas emjoras del neugaje tenemos por fin las <strong>validadciones por defecto de los formularios sin necsidad de JavaScript</strong> todo con un solo atributo. Claro esta que para validaciones basicas, ya que para validaciones mas complejas se necesitara a nuestro buen amigo 👉 JavaScript. Veamos un ejemplo</p>
-<p><strong><a href="https://codepen.io/estivenMayhuay/pen/LYeowXW">Link a Codepen.io Soporte formularios HTML</a></strong></p>
+<p>Gracias al poder del Dios de la programación y a los miles de programadores que trabajan en las nuevas mejoras del lenguaje, tenemos por fin las <strong>validaciones por defecto de los formularios sin necesidad de JavaScript</strong> todo con un solo atributo. Claro está que para validaciones básicas, ya que para validaciones más complejas se necesitara a nuestro buen amigo 👉 JavaScript. Veamos un ejemplo</p>
+<p>🔗 <a href="https://codepen.io/estivenMayhuay/pen/LYeowXW" target="_blank"><strong>Link a Codepen.io Soporte formularios HTML</strong></a></p>
 <p>Trata de ingresar datos incorrectos como en el campo celular ingresa letras y en el campo email ingresa un nombre y luego presiona enviar, podrás ver que gracias a HTML5 y sus mejoras te avisara en el caso de email que debe tener un <strong>@</strong> y en el campo celular no te dejara escribir letras.</p>
 <p><a id="svg-html5"></a></p>
 <h2>SVG</h2>
-<p>Scalable Vector Graphics son vectores gráficos que nos permiten mantener la calidad de nuestra imágenes sin importar el tamaño. Habrás notado que cuando usamos imágenes en formato <strong>.jpg, .png, .jpeg</strong> las cuales al ser agrandados se ven borrosos o pixelados. Hagamos un SVG muy sencillo.</p>
+<p>Scalable Vector Graphics son vectores gráficos que nos permiten mantener la calidad de nuestra imagen sin importar el tamaño. Habrás notado que cuando usamos imágenes en formato <strong>.jpg, .png, .jpeg</strong> las cuales al ser agrandados se ven borrosos o pixelados. Hagamos un SVG muy sencillo.</p>
 <p>El código de 👇 generará un círculo que será escalable a pesar de tener 50x50 px y no perderá su calidad.</p>
 <pre><code class="language-html">&lt;svg width=&quot;50&quot; height=&quot;50&quot;&gt;
   &lt;circle
@@ -162,8 +160,8 @@ ctx.fill();
 </code></pre>
 <p><a id="mathml-html5"></a></p>
 <h2>MathML</h2>
-<p>Es una de las funcionalidades de HTML5 que permite escribir notaciones matematicas.</p>
-<p>En conclusión, podemos decir que HTML5 es una de las mejores versiones que tenemos hasta el momento, como habrás podido apreciar, ahora pasemos al siguiente nivel.</p>
+<p>Es una de las funcionalidades de HTML5 que permite escribir notaciones matemáticas.</p>
+<p>En conclusión, podemos decir que <strong>HTML5 es una de las mejores versiones que tenemos hasta el momento</strong>, como habrás podido apreciar, ahora pasemos al siguiente nivel.</p>
 
       </section>
     </main>
