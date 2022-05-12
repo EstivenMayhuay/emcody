@@ -42,14 +42,18 @@ En el caso de los **Navegadores** no existe uno en especial. Sin embargo, podemo
 
 En el caso de **los editores de código**, tenemos la total libertad de usar el que más nos guste. A continuación te compartiré las diferentes plataformas que puedes utilizar.
 
-- [Download Visual Studio Code](https://code.visualstudio.com/download)
-- [Download Sublime Text](https://www.sublimetext.com/3)
-- [Download Atom](https://atom.io/)
+<ul>
+  <li><a href="https://code.visualstudio.com/download" target="_blank">Download Visual Studio Code</a></li>
+  <li><a href="https://www.sublimetext.com/3" target="_blank">Download Sublime Text</a></li>
+  <li><a href="https://atom.io/" target="_blank">Download Atom</a></li>
+</ul>
 
 Pero, eso no todo, si no cuentas con el suficiente poder de cómputo puedes operar por utilizar herramientas de codificación en la nube.
 
-- [JsFiddle](https://jsfiddle.net/)
-- [Codepen](https://codepen.io/pen/)
-- [VS Code en la Nube](https://vscode.dev/)
+<ul>
+  <li><a href="https://jsfiddle.net/" target="_blank">JsFiddle</a></li>
+  <li><a href="https://codepen.io/pen/" target="_blank">Codepen</a></li>
+  <li><a href="https://vscode.dev/" target="_blank">VS Code en la Nube</a></li>
+</ul>
 
 Y en el internet 😆 no sé que decir, pero creo que todos tenemos internet. Así que, sin más preámbulos, dirígete al panel de navegación para empezar a aprender.
