@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Este es el Blog de EMCODY, en el cual aprenderas sobre desarrollo web">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Node.js, React.js y mas">
+    <meta name="author" content="Estiven Mayhuay">
+    <!-- google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&amp;family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet">
+    <!-- boxicons-->
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
+    <!-- highlight block code-->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/atom-one-dark.min.css"><script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+<script> hljs.highlightAll(); </script>
+    <!-- title page-->
+    <!-- own stylesheet-->
+  </head>
+  <title>Etiquetas HTML - Desarrollo Web</title>
+  <link rel="stylesheet" href="../../../css/index.css">
+  <body class="gridContainer">
+    <header class="header gridContainer__header"><img class="header__icon" src="https://estivenmayhuay.github.io/emcody/images/logo-emcody.svg" alt="emcody logo">
+      <h1 class="header__title">EMCODY</h1>
+    </header>
+    <nav class="contentMenu gridContainer__nav">
+      <ul class="menu">
+        <li class="menu__item"><a class="menu__link" href="https://estivenmayhuay.github.io/emcody/index.html">Home</a></li>
+        <li class="menu__item"><a class="menu__link" href="https://estivenmayhuay.github.io/emcody/post/html5/index.html">HTML5</a></li>
+        <li class="menu__item"><a class="menu__link" href="#">CSS3</a></li>
+        <li class="menu__item"><a class="menu__link" href="#">JavaScript</a></li>
+        <li class="menu__item"><a class="menu__link" href="#">React.js</a></li>
+        <li class="menu__item"><a class="menu__link" href="#">Node.js</a></li>
+        <li class="menu__item"><a class="menu__link" href="#">Git-GitHub</a></li>
+        <li class="menu__item"><a class="menu__link" href="#">Bash</a></li>
+      </ul>
+    </nav>
+    <p class="headSideBar"><img src="https://estivenmayhuay.github.io/emcody/images/icon-dashboard.svg" alt="icon dashboard" id="iconSideBar"></p>
+    <aside class="panel gridContainer__panel" id="panelInfo">
+      <nav class="panelMenu"><span class="btnClose"><i class='bx bx-window-open'></i></span>
+        <div class="panelMenu__indice">
+          <h6>HTML5 Basico</h6>
+          <ul>
+            <li><a href="https://estivenmayhuay.github.io/emcody/post/html5/index.html">Intro</a></li>
+          </ul>
+          <ul>
+            <li><a href="https://estivenmayhuay.github.io/emcody/post/html5/breve-historia/index.html">Breve Historia</a></li>
+          </ul>
+          <ul>
+            <li><a href="https://estivenmayhuay.github.io/emcody/post/html5/que-es-html/index.html">¿Qué es HTML?</a></li>
+          </ul>
+          <ul>
+            <li><a href="https://estivenmayhuay.github.io/emcody/post/html5/que-es-html5/index.html">¿Qué es HTML5?</a></li>
+          </ul>
+          <ul>
+            <li><a href="https://estivenmayhuay.github.io/emcody/post/html5/estructura-basica-html/index.html">Estructura Básica</a></li>
+          </ul>
+        </div>
+        <div class="panelMenu__indice">
+          <h6>Tags HTML</h6>
+          <ul>
+            <li><a href="https://estivenmayhuay.github.io/emcody/post/html5/etiquetas-html/index.html">Etiquetas HTML</a></li>
+          </ul>
+        </div>
+      </nav>
+    </aside>
+    <div class="whatSeeInThisCourse gridContainer__details">
+      <h2 class="whatSeeInThisCourse__title">¿Qué veremos aquí?</h2>
+      <ul class="contentList">
+        <li><a href="#tags-html">¿Que son las etiquetas?</a></li>
+        <li><a href="#atributos-html">¿Que son los atributos?</a></li>
+      </ul>
+    </div>
+    <main class="main gridContainer__main">
+      <section class="intro-HTML5"><h1>Etiquetas HTML</h1>
+<p>Hola de nuevo te saluda Estiven 😀, si estás leyendo este artículo** quiero agradecerte por el interés que muestras.** En artículos anteriores respondimos a las siguientes interrogantes <strong>¿Qué es HTML?</strong> Y <strong>¿Qué es HTML5?</strong> Y en esta oportunidad hablaremos sobre <strong>las etiquetas en HTML.</strong>
+Si deseas saber sobre los artículos anteriores aquí van los enlaces. Así que continuemos.</p>
+<ul>
+  <li><a href="https://estivenmayhuay.github.io/emcody/post/html5/que-es-html/index.html" target="_blank">¿Qué es HTML?</a></li>
+  <li><a href="https://estivenmayhuay.github.io/emcody/post/html5/que-es-html5/index.html" target="_blank">¿Qué es HTML5?</a></li>
+</ul>
+<p><a id="tags-html"></a></p>
+<h2>¿Qué son las Etiquetas?</h2>
+<p>Los tags o también denominados etiquetas, son aquellas características de HTML que <strong>nos permiten representar los elementos que vemos en los sitios web</strong>. Por ejemplo: los títulos, párrafos, enlaces, pie de página, entre otros.</p>
+<p>En pocas palabras podemos decir: <strong>una etiqueta representa elementos del lenguaje (párrafos, títulos, etc.) mediante una estructura predefinida.</strong> Ahora bien, ¿Cuáles son las partes de una etiqueta HTML?</p>
+<ul>
+<li>Elemento</li>
+<li>Contenido</li>
+<li>Etiqueta cierre</li>
+<li>Etiqueta apertura</li>
+</ul>
+<p>Como puedes visualizar en la imagen de abajo ⮯ se muestran 4 partes principales de una etiqueta. El Elemento es la etiqueta en sí. El contenido es aquella información que será mostrada al usuario y claro esta tenemos los siguientes símbolos <strong>&lt;&gt; &lt;/&gt;</strong> los cuales son la <strong>forma en que HTML entiende que hacemos uso de las etiquetas y que no solo estamos escribiendo texto plano.</strong></p>
+<p class="image">
+<img src="../../../images/tag-structure-html.jpeg" alt="estructura de una etiqueta HTML" />
+</p>
+<p>Bueno, ya sabemos que es una etiqueta, pero <strong>¿Cómo se representa en código?</strong> Como puedes apreciar en la siguiente imagen tenemos una etiqueta para títulos h1, etiqueta para contenido informativo (párrafos) y etiqueta de imagen, Como puedes notar están presentes los siguientes símbolos &lt;&gt;&lt;/&gt; excepto en la <strong>etiqueta img</strong>, pero eso lo explicaremos en breve.</p>
+<pre><code class="language-html">&lt;h1&gt;Soy un título&lt;/h1&gt;
+&lt;p&gt;Soy un párrafo&lt;/p&gt;
+&lt;img src=&quot;./images/logo.png&quot; alt=&quot;logo&quot; /&gt;
+</code></pre>
+<p>Las etiquetas tienen diferentes propósitos, no podemos usar una etiqueta definida para párrafos en un título cierto, <strong>debido a que los títulos tienen un mayor impacto y muestran el concepto general de un tema.</strong> Por lo tanto, <strong>los tags tienen un sentido semántico, es decir, un significado.</strong></p>
+<p>Como ya habíamos comentado en la sección de
+<a href="https://estivenmayhuay.github.io/emcody/post/html5/estructura-basica-html/index.html" target="_blank">Estructura básica de HTML</a> las etiquetas tienen un inicio y fin.</p>
+<ul>
+<li>Etiqueta de apertura <strong>&lt;&gt;</strong></li>
+<li>Etiqueta de cierre <strong>&lt;/&gt;</strong></li>
+</ul>
+<p>Casi todas las etiquetas tienen estos <strong>símbolos &lt;&gt; &lt;/&gt;.</strong> Sin embargo, hay etiquetas con excepciones como la <strong>etiqueta img</strong>, en la cual, en la misma etiqueta, está el cierre mediante el símbolo del <strong>slash /.</strong></p>
+<p class="image">
+<img src="../../../images/tag_open_close_different.jpg" alt="etiquetas HTML con diferente cierre" />
+</p>
+<p>Aquí algunos ejemplos de este tipo de etiquetas</p>
+<pre><code class="language-html">&lt;img src=&quot;estiven.png&quot; alt=&quot;Estiven Mayhuay&quot; /&gt;
+&lt;meta charset=&quot;utf-8&quot; /&gt;
+&lt;meta name=&quot;autor&quot; content=&quot;EMCODY&quot; /&gt;
+&lt;input type=&quot;text&quot; /&gt;
+</code></pre>
+<p>Tal vez te estés preguntado que son esos datos adicionales aparte del nombre de la etiqueta, bueno son conocidos como <strong>atributos (características de la etiqueta).</strong> En el caso de la <strong>etiqueta meta</strong>, el <strong>atributo name</strong> hace referencia a un valor que pueda tomar como <strong>el nombre del autor, el código de lenguaje, las palabras claves de la página, la descripción de la página y más.</strong> Pero no te preocupes esto, lo veremos a continuación.</p>
+<p><a id="atributos-html"></a></p>
+<h2>¿Qué son los Atributos?</h2>
+<p>Son aquellas características y funcionalidades adicionales que se le otorgan a las etiquetas. Por ejemplo: en la e<strong>tiqueta img</strong> tenemos el <strong>atributo src</strong>, el cual <strong>permite definir la ruta de donde obtendremos la imagen.</strong></p>
+<pre><code class="language-html">&lt;input type=&quot;button&quot; value=&quot;Enviar&quot; id=&quot;btnSend&quot; /&gt;
+&lt;input type=&quot;text&quot; id=&quot;nameuser&quot; /&gt;
+&lt;input type=&quot;email&quot; id=&quot;emailUer&quot; /&gt;
+&lt;img src=&quot;icon.png&quot; alt=&quot;logo&quot; /&gt;
+</code></pre>
+<p>El atributo <strong>type</strong> en las etiquetas <strong>input</strong> hacer referencia al tipo y formato de información que será recibida en un campo. Y lo nuevo tal vez es la <strong>palabra id</strong>, bueno es un <strong>identificador</strong> <strong>el cual no debe repetirse, debe ser único</strong>, esto nos servirá cuando queramos dar <strong>estilos personalizados a un elemento HTML en particular.</strong></p>
+<p>Este es el código HTML de un formulario con las particularidades de las etiquetas que tiene el siguiente símbolo <strong>&lt; /&gt;</strong></p>
+<pre><code class="language-html">&lt;form&gt;
+  &lt;input type=&quot;button&quot; value=&quot;Enviar&quot; id=&quot;btnSend&quot; /&gt;
+  &lt;input type=&quot;text&quot; id=&quot;nameuser&quot; /&gt;
+  &lt;input type=&quot;email&quot; id=&quot;emailUer&quot; /&gt;
+&lt;/form&gt;
+</code></pre>
+<p>Y en el siguiente código tenemos el <strong>famoso CSS</strong> que hará uso de los <strong>Identificadores (id)</strong> de HTML para <strong>dar estilos personalizados.</strong></p>
+<pre><code class="language-css">#btnSend {
+  background-color: red;
+}
+
+#nameUser,
+#emailUser {
+  color: blue;
+}
+</code></pre>
+<p>Pero, no nos adelantemos paso a paso. En conclusión, recuerda que las <strong>etiquetas tienen un significado semántico</strong>. En su estructura se conforman por una <strong>etiqueta de apertura y de cierre</strong>, también tienen <strong>atributos que otorgan información y funcionalidad adicional.</strong></p>
+
+      </section>
+    </main>
+    <div id="buttonMenu">
+      <p id="buttonMenu__up"></p>
+      <p id="buttonMenu__center"></p>
+      <p id="buttonMenu__down"></p>
+    </div>
+    <footer class="footer gridContainer__footer"><span> © Copyright EMCODY 2022</span></footer>
+    <script src="../../script/app.js" type="module"></script>
+  </body>
+</html>

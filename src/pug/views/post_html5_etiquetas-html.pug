@@ -1,0 +1,37 @@
+doctype html
+html(lang="es")
+  include ../includes/head.pug
+  block titlePage
+    title= 'Etiquetas HTML - Desarrollo Web'
+  block ownStyle
+    link(rel="stylesheet", href="../../../css/index.css")
+  body.gridContainer
+    include ../includes/header.pug
+    include ../includes/navMenu.pug
+    include ../includes/headSideBar.pug
+    include ../includes/sideBarHTML5.pug
+
+    div.whatSeeInThisCourse.gridContainer__details
+      h2.whatSeeInThisCourse__title ¿Qué veremos aquí?
+      ul.contentList
+        li
+          a(href="#tags-html") ¿Que son las etiquetas?
+        li
+          a(href="#atributos-html") ¿Que son los atributos?
+
+    main.main.gridContainer__main
+      section.intro-HTML5
+        include:markdown-it(html) ../../../src/markdown/post/html5/etiquetas-html.md
+    
+
+    //- #buttonUp
+    //-   img(src=`${baseDeployUrlImg}/icon-up.svg`, alt="icon up" id="iconUp")
+    
+    #buttonMenu
+      p#buttonMenu__up
+      p#buttonMenu__center
+      p#buttonMenu__down
+    
+    include ../includes/footer.pug
+
+    script(src="../../script/app.js" type="module")
