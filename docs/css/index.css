@@ -875,7 +875,7 @@ body {
 }
 #buttonMenu {
   position: absolute;
-  top: 12px;
+  top: 10px;
   display: flex;
   flex-flow: column wrap;
   align-items: center;
@@ -886,7 +886,7 @@ body {
   border-radius: 50%;
   transform: rotate(0);
   transition: transform 0.4s ease;
-  z-index: 97;
+  z-index: 100;
 }
 #buttonMenu__up,
 #buttonMenu__center,
