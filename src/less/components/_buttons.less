@@ -1,20 +1,10 @@
-#buttonUp,
 #buttonMenu {
+  position: absolute;
+  top: 10px;
   right: 16px;
   width: @wbtnUpMenu;
   height: @wbtnUpMenu;
   .mixin-buttons-events();
-}
-
-#buttonUp {
-  position: absolute;
-  bottom: @hFooter + 4px;
-  z-index: 99;
-}
-
-#buttonMenu {
-  position: absolute;
-  top: 10px;
   .mixin-display-flex(column, wrap, center, center, 4px, 0);
   background: @color-primary;
   border-radius: 50%;
@@ -98,10 +88,5 @@
   #buttonMenu,
   .btnClose {
     display: none;
-  }
-
-  #buttonUp {
-    right: 32px;
-    bottom: 64px;
   }
 }
