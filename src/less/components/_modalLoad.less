@@ -1,0 +1,65 @@
+.modalLoad {
+  @wModal: 80px;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 16px;
+  padding: 16px;
+  width: 100%;
+  height: 100%;
+  z-index: 101;
+  background: rgba(64, 64, 64, 0.85);
+
+  &__title {
+    .mixin-fonts(@white, @font-firaCode, 700, @headline-2);
+  }
+
+  &__descp {
+    .mixin-fonts(@white-grayish, @font-roboto, 600, @body-2);
+    line-height: 1.6rem;
+    text-align: center;
+  }
+
+  &__load {
+    width: @wModal;
+    height: @wModal;
+    background: @color-primary;
+    border-radius: 50%;
+    opacity: 1;
+    transform: scale(1);
+    animation: fadeZoom 0.8s ease infinite;
+    transition: opacity 0.4s, transform 0.4s;
+  }
+
+  @keyframes fadeZoom {
+    from {
+      opacity: 0;
+      transform: scale(1);
+    }
+    to {
+      opacity: 0.85;
+      transform: scale(0.75);
+    }
+  }
+}
+
+// laptop & desktop small & medium
+@media @laptop, @desktop-s, @desktop-m, @desktop-b {
+  .modalLoad {
+    &__title {
+      font-size: @headline-1;
+    }
+
+    &__descp {
+      font-size: @headline-5;
+    }
+  }
+}
