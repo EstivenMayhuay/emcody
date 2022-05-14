@@ -29,7 +29,7 @@ En el caso de los **Navegadores** no existe uno en especial. Sin embargo, podemo
 **Dev Tool Chrome**
 
 <p class="image">
-  <img src="../../images/devToolChrome.jpeg" alt="dev tool chrome">
+  <img src="https://estivenmayhuay.github.io/emcody/images/devToolChrome.jpeg" alt="dev tool chrome">
 </p>
 
 <a id="dev-tool-firefox"></a>
@@ -37,7 +37,7 @@ En el caso de los **Navegadores** no existe uno en especial. Sin embargo, podemo
 **Dev Tool Firefox**
 
 <p class="image">
-  <img src="../../images/devToolFirefox.jpeg" alt="dev tool firefox">
+  <img src="https://estivenmayhuay.github.io/emcody/images/devToolFirefox.jpeg" alt="dev tool firefox">
 </p>
 
 En el caso de **los editores de código**, tenemos la total libertad de usar el que más nos guste. A continuación te compartiré las diferentes plataformas que puedes utilizar.

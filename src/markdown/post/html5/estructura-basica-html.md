@@ -75,7 +75,7 @@ No parece tan importante cierto, pero es gracias a esta etiqueta que podemos **p
 Ahora, veamos la estructura básica de HTML desde un punto de vista jerárquico, es decir, con una **estructura de árbol**. En la imagen de abajo podrás visualizar que el primer **nodo html** es la raíz el **nodo principal** y a partir del mismo se ramifican dos nodos adicionales **body y head** y cada nodo a su vez tiene diferentes ramificaciones. Esto nos da a entender que **body y head** pertenecen o se encuentran a un nivel más bajo que el nodo html.
 
 <p class="image">
-<img src="../../../images/estructura-arbol-html.jpg" alt="estructura jerárquica HTML" />
+<img src="https://estivenmayhuay.github.io/emcody/images/estructura-arbol-html.jpg" alt="estructura jerárquica HTML" />
 </p>
 
 En conclusión, ya sabemos que al iniciar con HTML la parte de la codificación no es tan complicada. Así que manos a la obra empieza a crear tu primera estructura en tu editor de códigos favorito. Como una ayuda adicional puede usar **codepen.io**, en el caso de que no sepas como abrir tu archivo html en tu navegador, lo cual no es tan complicado, ya que puedes copiar la ruta del archivo html que se encuentra en tu computadora en tu navegador.

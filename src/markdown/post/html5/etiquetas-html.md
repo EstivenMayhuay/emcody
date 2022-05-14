@@ -24,7 +24,7 @@ En pocas palabras podemos decir: **una etiqueta representa elementos del lenguaj
 Como puedes visualizar en la imagen de abajo ⮯ se muestran 4 partes principales de una etiqueta. El Elemento es la etiqueta en sí. El contenido es aquella información que será mostrada al usuario y claro esta tenemos los siguientes símbolos **<> </>** los cuales son la **forma en que HTML entiende que hacemos uso de las etiquetas y que no solo estamos escribiendo texto plano.**
 
 <p class="image">
-<img src="../../../images/tag-structure-html.jpeg" alt="estructura de una etiqueta HTML" />
+<img src="https://estivenmayhuay.github.io/emcody/images/tag-structure-html.jpeg" alt="estructura de una etiqueta HTML" />
 </p>
 
 Bueno, ya sabemos que es una etiqueta, pero **¿Cómo se representa en código?** Como puedes apreciar en la siguiente imagen tenemos una etiqueta para títulos h1, etiqueta para contenido informativo (párrafos) y etiqueta de imagen, Como puedes notar están presentes los siguientes símbolos <></> excepto en la **etiqueta img**, pero eso lo explicaremos en breve.
@@ -32,7 +32,7 @@ Bueno, ya sabemos que es una etiqueta, pero **¿Cómo se representa en código?*
 ```html
 <h1>Soy un título</h1>
 <p>Soy un párrafo</p>
-<img src="./images/logo.png" alt="logo" />
+<img src="https://estivenmayhuay.github.io/emcody/images/logo.png" alt="logo" />
 ```
 
 Las etiquetas tienen diferentes propósitos, no podemos usar una etiqueta definida para párrafos en un título cierto, **debido a que los títulos tienen un mayor impacto y muestran el concepto general de un tema.** Por lo tanto, **los tags tienen un sentido semántico, es decir, un significado.**
@@ -46,7 +46,7 @@ Como ya habíamos comentado en la sección de
 Casi todas las etiquetas tienen estos **símbolos <> </>.** Sin embargo, hay etiquetas con excepciones como la **etiqueta img**, en la cual, en la misma etiqueta, está el cierre mediante el símbolo del **slash /.**
 
 <p class="image">
-<img src="../../../images/tag_open_close_different.jpg" alt="etiquetas HTML con diferente cierre" />
+<img src="https://estivenmayhuay.github.io/emcody/images/tag_open_close_different.jpg" alt="etiquetas HTML con diferente cierre" />
 </p>
 
 Aquí algunos ejemplos de este tipo de etiquetas
