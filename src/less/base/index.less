@@ -19,6 +19,20 @@ body {
   overflow-x: hidden;
 }
 
+// ScrollBar
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #ddd;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: @color-primary;
+  border: 0.5px solid @gray;
+}
+
 // laptop & desktop small & desktop medium
 @media @laptop, @desktop-s, @desktop-m, @desktop-b {
   .gridContainer {
