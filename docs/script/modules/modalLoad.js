@@ -1,7 +1,7 @@
 const modalLoad = () => {
   setTimeout(() => {
     document.getElementById("modalLoadInfo").style.display = "none";
-  }, 2000);
+  }, 3500);
 };
 
 export { modalLoad };

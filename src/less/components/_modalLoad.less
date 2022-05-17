@@ -1,5 +1,5 @@
 .modalLoad {
-  @wModal: 80px;
+  @wSpinner: 48px;
 
   position: fixed;
   top: 0;
@@ -28,25 +28,21 @@
     text-align: center;
   }
 
-  &__load {
-    width: @wModal;
-    height: @wModal;
-    background: @color-primary;
+  .spinner {
+    width: @wSpinner;
+    height: @wSpinner;
     border-radius: 50%;
-    opacity: 1;
-    transform: scale(1);
-    animation: fadeZoom 0.8s ease infinite;
-    transition: opacity 0.4s, transform 0.4s;
+    border: 2px solid @color-primary;
+    border-top: 2px solid @white;
+    animation: rotate 0.7s linear infinite;
   }
 
-  @keyframes fadeZoom {
+  @keyframes rotate {
     from {
-      opacity: 0;
-      transform: scale(1);
+      transform: rotate(0deg);
     }
     to {
-      opacity: 0.85;
-      transform: scale(0.75);
+      transform: rotate(360deg);
     }
   }
 }

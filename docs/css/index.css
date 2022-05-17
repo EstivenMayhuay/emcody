@@ -1025,24 +1025,20 @@ body::-webkit-scrollbar-thumb {
   line-height: 1.6rem;
   text-align: center;
 }
-.modalLoad__load {
-  width: 80px;
-  height: 80px;
-  background: #88139b;
+.modalLoad .spinner {
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
-  opacity: 1;
-  transform: scale(1);
-  animation: fadeZoom 0.8s ease infinite;
-  transition: opacity 0.4s, transform 0.4s;
+  border: 2px solid #88139b;
+  border-top: 2px solid #ffffff;
+  animation: rotate 0.7s linear infinite;
 }
-@keyframes fadeZoom {
+@keyframes rotate {
   from {
-    opacity: 0;
-    transform: scale(1);
+    transform: rotate(0deg);
   }
   to {
-    opacity: 0.85;
-    transform: scale(0.75);
+    transform: rotate(360deg);
   }
 }
 @media only screen and (min-width: 960px) and (max-width: 1400px), only screen and (min-width: 1401px) and (max-width: 1560px), only screen and (min-width: 1561px) and (max-width: 1880px), only screen and (min-width: 1881px) and (max-width: 1930px) {

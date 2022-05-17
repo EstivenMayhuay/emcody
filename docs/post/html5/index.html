@@ -1,151 +1,72 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Este es el Blog de EMCODY, en el cual aprenderas sobre desarrollo web"
-    />
-    <meta
-      name="keywords"
-      content="HTML, CSS, JavaScript, Node.js, React.js y mas"
-    />
-    <meta name="author" content="Estiven Mayhuay" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Este es el Blog de EMCODY, en el cual aprenderas sobre desarrollo web">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Node.js, React.js y mas">
+    <meta name="author" content="Estiven Mayhuay">
     <!-- google fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&amp;family=Roboto:wght@400;500;700&amp;display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&amp;family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet">
     <!-- boxicons-->
-    <link
-      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
-      rel="stylesheet"
-    />
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
     <!-- highlight block code-->
-    <link
-      rel="stylesheet"
-      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/atom-one-dark.min.css"
-    />
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
-    <script>
-      hljs.highlightAll();
-    </script>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/atom-one-dark.min.css"><script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+<script> hljs.highlightAll(); </script>
     <!-- title page-->
     <!-- own stylesheet-->
   </head>
   <title>HTML5 - Desarrollo Web</title>
-  <link rel="stylesheet" href="../../css/index.css" />
+  <link rel="stylesheet" href="../../css/index.css">
   <body class="gridContainer">
     <div class="modalLoad" id="modalLoadInfo">
       <h1 class="modalLoad__title">EMCODY</h1>
-      <p class="modalLoad__descp">
-        Bienvenidos y Bienvenidas a este tu plataforma de aprendizaje de
-        Desarrollo Web
-      </p>
-      <div class="modalLoad__load"></div>
+      <p class="modalLoad__descp">Bienvenidos y Bienvenidas a este tu plataforma de aprendizaje de Desarrollo Web</p>
+      <div class="spinner"></div>
     </div>
-    <header class="header gridContainer__header">
-      <img
-        class="header__icon"
-        src="https://estivenmayhuay.github.io/emcody/images/logo-emcody.svg"
-        alt="emcody logo"
-      />
+    <header class="header gridContainer__header"><img class="header__icon" src="https://estivenmayhuay.github.io/emcody/images/logo-emcody.svg" alt="emcody logo">
       <h1 class="header__title">EMCODY</h1>
     </header>
     <nav class="contentMenu gridContainer__nav">
       <ul class="menu">
-        <li class="menu__item">
-          <a
-            class="menu__link"
-            href="https://estivenmayhuay.github.io/emcody/index.html"
-            >Home</a
-          >
-        </li>
-        <li class="menu__item">
-          <a
-            class="menu__link"
-            href="https://estivenmayhuay.github.io/emcody/post/html5/index.html"
-            >HTML5</a
-          >
-        </li>
+        <li class="menu__item"><a class="menu__link" href="https://estivenmayhuay.github.io/emcody/index.html">Home</a></li>
+        <li class="menu__item"><a class="menu__link" href="https://estivenmayhuay.github.io/emcody/post/html5/index.html">HTML5</a></li>
         <li class="menu__item"><a class="menu__link" href="#">CSS3</a></li>
-        <li class="menu__item">
-          <a class="menu__link" href="#">JavaScript</a>
-        </li>
+        <li class="menu__item"><a class="menu__link" href="#">JavaScript</a></li>
         <li class="menu__item"><a class="menu__link" href="#">React.js</a></li>
         <li class="menu__item"><a class="menu__link" href="#">Node.js</a></li>
-        <li class="menu__item">
-          <a class="menu__link" href="#">Git-GitHub</a>
-        </li>
+        <li class="menu__item"><a class="menu__link" href="#">Git-GitHub</a></li>
         <li class="menu__item"><a class="menu__link" href="#">Bash</a></li>
       </ul>
     </nav>
-    <p class="headSideBar">
-      <img
-        src="https://estivenmayhuay.github.io/emcody/images/icon-dashboard.svg"
-        alt="icon dashboard"
-        id="iconSideBar"
-      />
-    </p>
+    <p class="headSideBar"><img src="https://estivenmayhuay.github.io/emcody/images/icon-dashboard.svg" alt="icon dashboard" id="iconSideBar"></p>
     <aside class="panel gridContainer__panel" id="panelInfo">
-      <nav class="panelMenu">
-        <span class="btnClose"><i class="bx bx-window-open"></i></span>
+      <nav class="panelMenu"><span class="btnClose"><i class='bx bx-window-open'></i></span>
         <div class="panelMenu__indice">
           <h6>HTML5 Basico</h6>
           <ul>
-            <li>
-              <a
-                href="https://estivenmayhuay.github.io/emcody/post/html5/index.html"
-                >Intro</a
-              >
-            </li>
+            <li><a href="https://estivenmayhuay.github.io/emcody/post/html5/index.html">Intro</a></li>
           </ul>
           <ul>
-            <li>
-              <a
-                href="https://estivenmayhuay.github.io/emcody/post/html5/breve-historia/index.html"
-                >Breve Historia</a
-              >
-            </li>
+            <li><a href="https://estivenmayhuay.github.io/emcody/post/html5/breve-historia/index.html">Breve Historia</a></li>
           </ul>
           <ul>
-            <li>
-              <a
-                href="https://estivenmayhuay.github.io/emcody/post/html5/que-es-html/index.html"
-                >¿Qué es HTML?</a
-              >
-            </li>
+            <li><a href="https://estivenmayhuay.github.io/emcody/post/html5/que-es-html/index.html">¿Qué es HTML?</a></li>
           </ul>
           <ul>
-            <li>
-              <a
-                href="https://estivenmayhuay.github.io/emcody/post/html5/que-es-html5/index.html"
-                >¿Qué es HTML5?</a
-              >
-            </li>
+            <li><a href="https://estivenmayhuay.github.io/emcody/post/html5/que-es-html5/index.html">¿Qué es HTML5?</a></li>
           </ul>
           <ul>
-            <li>
-              <a
-                href="https://estivenmayhuay.github.io/emcody/post/html5/estructura-basica-html/index.html"
-                >Estructura Básica</a
-              >
-            </li>
+            <li><a href="https://estivenmayhuay.github.io/emcody/post/html5/estructura-basica-html/index.html">Estructura Básica</a></li>
           </ul>
         </div>
         <div class="panelMenu__indice">
           <h6>Tags HTML</h6>
           <ul>
-            <li>
-              <a
-                href="https://estivenmayhuay.github.io/emcody/post/html5/etiquetas-html/index.html"
-                >Etiquetas HTML</a
-              >
-            </li>
+            <li><a href="https://estivenmayhuay.github.io/emcody/post/html5/etiquetas-html/index.html">Etiquetas HTML</a></li>
           </ul>
         </div>
       </nav>
@@ -159,100 +80,51 @@
       </ul>
     </div>
     <main class="main gridContainer__main">
-      <section class="intro-HTML5">
-        <p><a id="introduccion"></a></p>
-        <h1><strong>HTML5</strong></h1>
-        <p>
-          Bienvenidos y Bienvenidas a esta sección en donde hablaremos sobre una
-          de las tecnologías fundamentales para el desarrollo web.
-          <strong>Nos referimos a HTML</strong>, el cual es un lenguaje que
-          debemos aprender si queremos adentrarnos en el mundo web.
-        </p>
-        <p>
-          Por lo cual, en esta ocasión tenemos una serie de temas que
-          abordaremos para entender los fundamentos de HTML, estos son:
-        </p>
-        <ul>
-          <li>HTML Básico</li>
-          <li>Estructura HTML</li>
-          <li>Tags en HTML</li>
-          <li>Etiquetas semánticas</li>
-          <li>Formularios</li>
-          <li>Canvas</li>
-          <li>API's y mucho más</li>
-        </ul>
-        <p>
-          Ahora bien, surge la interrogante
-          <strong>¿Qué herramientas necesito para trabajar con HTML?</strong>
-          Aquí te ayudaremos.
-        </p>
-        <ul>
-          <li>Navegador (Chrome, Firefox, Opera, Safari)</li>
-          <li>Editor de Código (Atom, Visual Studio Code, Sublime Text)</li>
-          <li>Conexión a Internet</li>
-        </ul>
-        <p>
-          Lo sé, es más que obvio, lo del navegador 😀. Sin embargo, aquí
-          tratamos de que todos aprendan, tengan un conocimiento avanzando o
-          recién estén comenzando.
-        </p>
-        <p>
-          En el caso de los <strong>Navegadores</strong> no existe uno en
-          especial. Sin embargo, podemos optar por
-          <strong>Google Chrome y Firefox</strong> esto debido que ambos
-          navegadores tienen muy buenas
-          <strong>Dev Tools (Herramientas de Desarrollo)</strong>.
-        </p>
-        <p><a id="dev-tool-chrome"></a></p>
-        <p><strong>Dev Tool Chrome</strong></p>
-        <p class="image">
-          <img
-            src="https://estivenmayhuay.github.io/emcody/images/devToolChrome.jpeg"
-            alt="dev tool chrome"
-          />
-        </p>
-        <p><a id="dev-tool-firefox"></a></p>
-        <p><strong>Dev Tool Firefox</strong></p>
-        <p class="image">
-          <img
-            src="https://estivenmayhuay.github.io/emcody/images/devToolFirefox.jpeg"
-            alt="dev tool firefox"
-          />
-        </p>
-        <p>
-          En el caso de <strong>los editores de código</strong>, tenemos la
-          total libertad de usar el que más nos guste. A continuación te
-          compartiré las diferentes plataformas que puedes utilizar.
-        </p>
-        <ul>
-          <li>
-            <a href="https://code.visualstudio.com/download" target="_blank"
-              >Download Visual Studio Code</a
-            >
-          </li>
-          <li>
-            <a href="https://www.sublimetext.com/3" target="_blank"
-              >Download Sublime Text</a
-            >
-          </li>
-          <li><a href="https://atom.io/" target="_blank">Download Atom</a></li>
-        </ul>
-        <p>
-          Pero, eso no todo, si no cuentas con el suficiente poder de cómputo
-          puedes operar por utilizar herramientas de codificación en la nube.
-        </p>
-        <ul>
-          <li><a href="https://jsfiddle.net/" target="_blank">JsFiddle</a></li>
-          <li><a href="https://codepen.io/pen/" target="_blank">Codepen</a></li>
-          <li>
-            <a href="https://vscode.dev/" target="_blank">VS Code en la Nube</a>
-          </li>
-        </ul>
-        <p>
-          Y en el internet 😆 no sé que decir, pero creo que todos tenemos
-          internet. Así que, sin más preámbulos, dirígete al panel de navegación
-          para empezar a aprender.
-        </p>
+      <section class="intro-HTML5"><p><a id="introduccion"></a></p>
+<h1><strong>HTML5</strong></h1>
+<p>Bienvenidos y Bienvenidas a esta sección en donde hablaremos sobre una de las tecnologías fundamentales para el desarrollo web. <strong>Nos referimos a HTML</strong>, el cual es un lenguaje que debemos aprender si queremos adentrarnos en el mundo web.</p>
+<p>Por lo cual, en esta ocasión tenemos una serie de temas que abordaremos para entender los fundamentos de HTML, estos son:</p>
+<ul>
+<li>HTML Básico</li>
+<li>Estructura HTML</li>
+<li>Tags en HTML</li>
+<li>Etiquetas semánticas</li>
+<li>Formularios</li>
+<li>Canvas</li>
+<li>API's y mucho más</li>
+</ul>
+<p>Ahora bien, surge la interrogante <strong>¿Qué herramientas necesito para trabajar con HTML?</strong> Aquí te ayudaremos.</p>
+<ul>
+<li>Navegador (Chrome, Firefox, Opera, Safari)</li>
+<li>Editor de Código (Atom, Visual Studio Code, Sublime Text)</li>
+<li>Conexión a Internet</li>
+</ul>
+<p>Lo sé, es más que obvio, lo del navegador 😀. Sin embargo, aquí tratamos de que todos aprendan, tengan un conocimiento avanzando o recién estén comenzando.</p>
+<p>En el caso de los <strong>Navegadores</strong> no existe uno en especial. Sin embargo, podemos optar por <strong>Google Chrome y Firefox</strong> esto debido que ambos navegadores tienen muy buenas <strong>Dev Tools (Herramientas de Desarrollo)</strong>.</p>
+<p><a id="dev-tool-chrome"></a></p>
+<p><strong>Dev Tool Chrome</strong></p>
+<p class="image">
+  <img src="https://estivenmayhuay.github.io/emcody/images/devToolChrome.jpeg" alt="dev tool chrome">
+</p>
+<p><a id="dev-tool-firefox"></a></p>
+<p><strong>Dev Tool Firefox</strong></p>
+<p class="image">
+  <img src="https://estivenmayhuay.github.io/emcody/images/devToolFirefox.jpeg" alt="dev tool firefox">
+</p>
+<p>En el caso de <strong>los editores de código</strong>, tenemos la total libertad de usar el que más nos guste. A continuación te compartiré las diferentes plataformas que puedes utilizar.</p>
+<ul>
+  <li><a href="https://code.visualstudio.com/download" target="_blank">Download Visual Studio Code</a></li>
+  <li><a href="https://www.sublimetext.com/3" target="_blank">Download Sublime Text</a></li>
+  <li><a href="https://atom.io/" target="_blank">Download Atom</a></li>
+</ul>
+<p>Pero, eso no todo, si no cuentas con el suficiente poder de cómputo puedes operar por utilizar herramientas de codificación en la nube.</p>
+<ul>
+  <li><a href="https://jsfiddle.net/" target="_blank">JsFiddle</a></li>
+  <li><a href="https://codepen.io/pen/" target="_blank">Codepen</a></li>
+  <li><a href="https://vscode.dev/" target="_blank">VS Code en la Nube</a></li>
+</ul>
+<p>Y en el internet 😆 no sé que decir, pero creo que todos tenemos internet. Así que, sin más preámbulos, dirígete al panel de navegación para empezar a aprender.</p>
+
       </section>
     </main>
     <div id="buttonMenu">
@@ -265,17 +137,13 @@
         <div class="social">
           <h2>Social Media</h2>
           <ul>
-            <li><a href="" target="_blank">Discord</a></li>
-            <li><a href="" target="_blank">YouTube</a></li>
-            <li><a href="" target="_blank">GitHub</a></li>
+            <li> <a href="" target="_blank">Discord</a></li>
+            <li> <a href="" target="_blank">YouTube</a></li>
+            <li> <a href="" target="_blank">GitHub</a></li>
           </ul>
         </div>
-      </div>
-      <span> © Copyright EMCODY 2022</span>
+      </div><span> © Copyright EMCODY 2022</span>
     </footer>
-    <script
-      src="https://estivenmayhuay.github.io/emcody/script/app.js"
-      type="module"
-    ></script>
+    <script src="https://estivenmayhuay.github.io/emcody/script/app.js" type="module"> </script>
   </body>
 </html>
