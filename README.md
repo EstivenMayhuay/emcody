@@ -1,7 +1,5 @@
 # ![emcody](./docs/images/logo-emcody.svg)
 
-## **EMCODY**
-
 Es una plataforma web que le permite a las personas interesadas en el mundo del desarrollo web, poder aprender las tecnologías base como:
 
 - HTML5
