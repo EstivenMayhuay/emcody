@@ -15,8 +15,8 @@ Es una plataforma web que le permite a las personas interesadas en el mundo del 
 
 Buscamos llegas a más personas compartiendo lo que aprendemos y conocer lo que la comunidad tiene para ofrecer.
 
-## **Entorno**
+## **Vistas**
 
 A continuación podrás dar un vistazo a nuestro entorno de aprendizaje.
 
-![ecody desktop](./docs/images/view-desktop-emcody.png)
+> **Home** ![emcody desktop](./docs/images/view-desktop-emcody.png) **Course** ![emcody course](./docs/images/view_course.png)
