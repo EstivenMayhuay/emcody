@@ -24,7 +24,7 @@ const createElementsCards = async () => {
   const repos = await fetchGithub();
   const fragment = document.createDocumentFragment();
 
-  repos.slice(-10).forEach((repo) => {
+  repos.slice(-12).forEach((repo) => {
     const cardProject = document.createElement("div");
     const divTopics = document.createElement("ul");
     const h4 = document.createElement("h4");
