@@ -1,0 +1,50 @@
+doctype html
+html(lang="es")
+  include ../includes/head.pug
+  block titlePage
+    title= 'Seccionamiento de Contenido'
+  block ownStyle
+    link(rel="stylesheet", href="../../../css/index.css")
+  body.gridContainer
+    include ../includes/modalLoad.pug
+
+    include ../includes/header.pug
+    include ../includes/navMenu.pug
+    include ../includes/headSideBar.pug
+    include ../includes/sideBarHTML5.pug
+
+    div.whatSeeInThisCourse.gridContainer__details
+      h2.whatSeeInThisCourse__title ¿Qué veremos aquí?
+      ul.contentList
+        li
+          a(href="#tag-header") header
+        li
+          a(href="#tag-nav") nav
+        li
+          a(href="#tag-main") main
+        li
+          a(href="#tag-section") section
+        li
+          a(href="#tag-article") article
+        li
+          a(href="#tag-aside") aside
+        li
+          a(href="#tag-footer") footer
+        li
+          a(href="#tag-address") address
+        li
+          a(href="#tag-headlines") headlines
+
+    main.main.gridContainer__main
+      section.intro-HTML5
+        include:markdown-it(html) ../../../src/markdown/post/html5/seccionamiento-contenido.md
+
+    #buttonMenu
+      p#buttonMenu__up
+      p#buttonMenu__center
+      p#buttonMenu__down
+    
+    include ../includes/footer.pug
+
+    include ../includes/contentScript.pug
+

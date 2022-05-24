@@ -604,8 +604,11 @@ body::-webkit-scrollbar-thumb {
   .main .home__content .info p {
     width: 80%;
   }
-  .main pre {
-    min-width: calc(100% - 32px);
+  .main [class*="intro-"] {
+    padding: 24px;
+  }
+  .main [class*="intro-"] pre {
+    width: 560px;
   }
 }
 @media only screen and (min-width: 960px) and (max-width: 1400px) {
@@ -677,7 +680,7 @@ body::-webkit-scrollbar-thumb {
     padding: 24px;
   }
   .main [class*="intro-"] pre {
-    width: 70%;
+    width: 560px;
   }
 }
 @media only screen and (min-width: 1401px) and (max-width: 1560px), only screen and (min-width: 1561px) and (max-width: 1880px), only screen and (min-width: 1881px) and (max-width: 1930px) {
@@ -771,7 +774,7 @@ body::-webkit-scrollbar-thumb {
     padding: 24px;
   }
   .main [class*="intro-"] pre {
-    width: 70%;
+    min-width: 640px;
   }
 }
 @media only screen and (min-width: 1561px) and (max-width: 1880px) {
