@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "nombre": "Desarrollo de Sitios Web",
+        "descripcion": "Desarrollo de sitios web para mostrar la información de tu negocio y captar clientes potenciales.",
+        "image": "/banner_websites.jpg"
+    },
+    {
+        "id": 2,
+        "nombre": "Desarrollo de Aplicaciones Web",
+        "descripcion": "Desarrollo de sistemas complejos para el control de las áreas de tu negocio.",
+        "image": "/banner_webapps.jpg"
+    },
+    {
+        "id": 3,
+        "nombre": "Dominio y Hosting",
+        "descripcion": "Ofrecemos Dominio y Alojamiento para tu Sitio Web o Aplicación.",
+        "image": "/banner_hosting.jpg"
+    }
+]

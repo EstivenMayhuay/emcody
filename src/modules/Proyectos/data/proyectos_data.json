@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "nombre": "KT2 Chile",
+        "descripcion": "Desarrollamos un dashboard para la gestión de las noticias, música, galerías, concurso y programaciones de Onda Cero y Panamericana.",
+        "image": "/banner_kt2.jpeg"
+    },
+    {
+        "id": 2,
+        "nombre": "Derco",
+        "descripcion": "Ayudamos en mejorar la funcionalidad en el módulo de registros de automóviles.",
+        "image": "/banner_derco.jpeg"
+    },
+    {
+        "id": 3,
+        "nombre": "Inchcape",
+        "descripcion": "Mejoramos la funcionalidad aumentando las sedes, corrigiendo los permisos y la reserva de estacionamientos.",
+        "image": "/banner_inchcape.jpeg"
+    },
+    {
+        "id": 4,
+        "nombre": "Medical Audición",
+        "descripcion": "Desarrollamos un ERP para la gestión de las áreas de la casa audiológica.",
+        "image": "/banner_medical_audicion.jpeg"
+    },
+    {
+        "id": 5,
+        "nombre": "MotorZone Perú",
+        "descripcion": "Desarrollamos una website que permita una mayor visualización de sus servicios para futuros clientes.",
+        "image": "/banner_motor_zone.jpeg"
+    },
+    {
+        "id": 6,
+        "nombre": "Grupo Panamericana de Radios",
+        "descripcion": "Desarrollamos un dashboard para la gestión de las noticias, música, galerías, concurso y programaciones de Onda Cero y Panamericana.",
+        "image": "/banner_onda_cero_dashboard.jpeg"
+    }
+]

@@ -1,0 +1,23 @@
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 240px;
+    height: 100vh;
+    display: flex;
+    flex-flow: column;
+    gap: 1.5rem;
+    transform: translateX(-100%);
+    z-index: 99;
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu__item {
+    list-style: none;
+    color: white;
+}
+
+.active {
+    transform: translateX(0);
+    transition: transform 0.3s ease-in-out;
+}
