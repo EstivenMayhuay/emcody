@@ -6,6 +6,7 @@ import servicios from "../../Servicios/data/servicios_data.json";
 import emailjs from "emailjs-com"
 import { useState } from "react";
 import useAlert from "../../../hooks/useAlert";
+import { Link } from "react-router-dom";
 
 const Home = () => {
     const {successAlert} = useAlert();
@@ -65,7 +66,7 @@ const Home = () => {
             <Flex justifyContent={"center"}>
                 <Button variant={"solid"} background={"blue.900"} paddingX={4} boxShadow={"lg"} _hover={{ background: "blue.950" }}>
                     <FaWhatsapp />
-                    Trabajemos Juntos
+                    <Link to={"https://wa.me/51953826360?text=¿Deseo información sobre los servicios web"}>Trabajemos Juntos</Link>
                 </Button>
             </Flex>
         </Box>
