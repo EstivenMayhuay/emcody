@@ -104,7 +104,7 @@ const Home = () => {
 
             <Grid
                 gap={{base: "12", md: "10"}}
-                templateColumns={{ base: "1fr", sm: "repeat(2, 1fr)", md: "repeat(3, 1fr)", xxl: "repeat(4, 1fr)" }}
+                templateColumns={{ base: "1fr", sm: "repeat(2, 1fr)", md: "repeat(3, 1fr)", lg: "repeat(4, auto)" }}
                 placeItems={"center"}
             >
                 {
